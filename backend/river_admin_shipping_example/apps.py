@@ -34,7 +34,7 @@ class RiverAdminShippingExampleApp(AppConfig):
         refunded_state, _ = State.objects.get_or_create(label=REFUNDED)
         closed_state, _ = State.objects.get_or_create(label=CLOSED)
 
-        workflow, _ = Workflow.objects.get_or_create(content_type=shipping_content_type, initial_state=initialized_state, field_name="shipping_status")
+        workflow, _ = Workflow.objects.get_or_create(content_type=shipping_content_type, field_name="shipping_status", defaults={"initial_state": initialized_state})
 
         TransitionMeta.objects.get_or_create(workflow=workflow, source_state=initialized_state, destination_state=shipped_state)
         TransitionMeta.objects.get_or_create(workflow=workflow, source_state=shipped_state, destination_state=arrived_state)

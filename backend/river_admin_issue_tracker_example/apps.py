@@ -4,10 +4,10 @@ from django.apps import AppConfig
 
 LOGGER = logging.getLogger(__name__)
 
-OPEN = "Initialized"
-IN_PROGRESS = "Shipped"
-RESOLVED = "Arrived"
-RE_OPENED = "Return Initialized"
+OPEN = "Open"
+IN_PROGRESS = "In Progress"
+RESOLVED = "Resolved"
+RE_OPENED = "Re-Opened"
 CLOSED = "Closed"
 
 
@@ -28,7 +28,7 @@ class RiverAdminIssueTrackerExampleApp(AppConfig):
         re_opened_state, _ = State.objects.get_or_create(label=RE_OPENED)
         closed_state, _ = State.objects.get_or_create(label=CLOSED)
 
-        workflow, _ = Workflow.objects.get_or_create(content_type=issue_content_type, initial_state=open_state, field_name="issue_status")
+        workflow, _ = Workflow.objects.get_or_create(content_type=issue_content_type, field_name="issue_status", defaults={"initial_state": open_state})
 
         TransitionMeta.objects.get_or_create(workflow=workflow, source_state=open_state, destination_state=in_progress_state)
         TransitionMeta.objects.get_or_create(workflow=workflow, source_state=in_progress_state, destination_state=resolved_state)
