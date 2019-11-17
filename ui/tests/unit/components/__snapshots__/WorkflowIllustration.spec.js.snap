@@ -1,0 +1,243 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WorkflowIllustration.vue should render even with one state 1`] = `
+<div
+  class="mx-auto pa-5 v-card v-sheet theme--light elevation-6"
+>
+  <div
+    class="v-card__text"
+  >
+    <div
+      class="container container--fluid"
+    >
+      <div
+        class="row align-center justify-center"
+      >
+        <div
+          align="center"
+          class="col"
+          id="svg-container"
+          justify="center"
+        >
+          <svg
+            class="shadow"
+            height="NaN"
+            width="650"
+          >
+            <g
+              transform="translate(NaN, 20)"
+            >
+              <g
+                class="output"
+              >
+                <g
+                  class="clusters"
+                />
+                <g
+                  class="edgePaths"
+                />
+                <g
+                  class="edgeLabels"
+                />
+                <g
+                  class="nodes"
+                >
+                  <g
+                    class="node node-default"
+                    id="state_1"
+                    style="opacity: 1;"
+                    transform="translate(NaN,NaN)"
+                  >
+                    <rect
+                      class="label-container"
+                      height="NaN"
+                      rx="5"
+                      ry="5"
+                      width="NaN"
+                      x="NaN"
+                      y="NaN"
+                    />
+                    <g
+                      class="label"
+                      transform="translate(0,0)"
+                    >
+                      <g
+                        transform="translate(NaN,NaN)"
+                      >
+                        <text>
+                          <tspan
+                            dy="1em"
+                            space="preserve"
+                            x="1"
+                          >
+                            state-1
+                          </tspan>
+                        </text>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WorkflowIllustration.vue should render with more than one state 1`] = `
+<div
+  class="mx-auto pa-5 v-card v-sheet theme--light elevation-6"
+>
+  <div
+    class="v-card__text"
+  >
+    <div
+      class="container container--fluid"
+    >
+      <div
+        class="row align-center justify-center"
+      >
+        <div
+          align="center"
+          class="col"
+          id="svg-container"
+          justify="center"
+        >
+          <svg
+            class="shadow"
+            height="NaN"
+            width="650"
+          >
+            <g
+              transform="translate(NaN, 20)"
+            >
+              <g
+                class="output"
+              >
+                <g
+                  class="clusters"
+                />
+                <g
+                  class="edgePaths"
+                />
+                <g
+                  class="edgeLabels"
+                />
+                <g
+                  class="nodes"
+                >
+                  <g
+                    class="node node-default"
+                    id="state_1"
+                    style="opacity: 1;"
+                    transform="translate(NaN,NaN)"
+                  >
+                    <rect
+                      class="label-container"
+                      height="NaN"
+                      rx="5"
+                      ry="5"
+                      width="NaN"
+                      x="NaN"
+                      y="NaN"
+                    />
+                    <g
+                      class="label"
+                      transform="translate(0,0)"
+                    >
+                      <g
+                        transform="translate(NaN,NaN)"
+                      >
+                        <text>
+                          <tspan
+                            dy="1em"
+                            space="preserve"
+                            x="1"
+                          >
+                            state-1
+                          </tspan>
+                        </text>
+                      </g>
+                    </g>
+                  </g>
+                  <g
+                    class="node node-default"
+                    id="state_2"
+                    style="opacity: 1;"
+                    transform="translate(NaN,NaN)"
+                  >
+                    <rect
+                      class="label-container"
+                      height="NaN"
+                      rx="5"
+                      ry="5"
+                      width="NaN"
+                      x="NaN"
+                      y="NaN"
+                    />
+                    <g
+                      class="label"
+                      transform="translate(0,0)"
+                    >
+                      <g
+                        transform="translate(NaN,NaN)"
+                      >
+                        <text>
+                          <tspan
+                            dy="1em"
+                            space="preserve"
+                            x="1"
+                          >
+                            state-2
+                          </tspan>
+                        </text>
+                      </g>
+                    </g>
+                  </g>
+                  <g
+                    class="node node-default"
+                    id="state_3"
+                    style="opacity: 1;"
+                    transform="translate(NaN,NaN)"
+                  >
+                    <rect
+                      class="label-container"
+                      height="NaN"
+                      rx="5"
+                      ry="5"
+                      width="NaN"
+                      x="NaN"
+                      y="NaN"
+                    />
+                    <g
+                      class="label"
+                      transform="translate(0,0)"
+                    >
+                      <g
+                        transform="translate(NaN,NaN)"
+                      >
+                        <text>
+                          <tspan
+                            dy="1em"
+                            space="preserve"
+                            x="1"
+                          >
+                            state-3
+                          </tspan>
+                        </text>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

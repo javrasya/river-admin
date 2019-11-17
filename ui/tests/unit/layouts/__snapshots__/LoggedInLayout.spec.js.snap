@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoggedInLayout.vue Should not render state list on the left panel if the user is not authorized 1`] = `<!---->`;
+
+exports[`LoggedInLayout.vue Should render function list on the left panel if the user is authorized 1`] = `<!---->`;
+
+exports[`LoggedInLayout.vue Should render state list as disabled on the left panel if the user is not authorized 1`] = `<!---->`;
+
+exports[`LoggedInLayout.vue Should render state list as disabled on the left panel if the user is not authorized 2`] = `<!---->`;
+
+exports[`LoggedInLayout.vue Should render state list on the left panel if the user is authorized 1`] = `<!---->`;
+
+exports[`LoggedInLayout.vue Should render workflow list as disabled on the left panel if the user is not authorized 1`] = `<!---->`;
+
+exports[`LoggedInLayout.vue Should render workflow list on the left panel if the user is authorized 1`] = `<!---->`;
+
+exports[`LoggedInLayout.vue Should render workflow object list on the left panel if the user is authorized 1`] = `<!---->`;

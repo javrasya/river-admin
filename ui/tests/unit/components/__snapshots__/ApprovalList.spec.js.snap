@@ -1,0 +1,710 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ApprovalList.vue should emit event on order of the approvals change 1`] = `
+<div
+  class="container py-4 container--fluid"
+>
+  <div
+    class="row"
+  >
+    <div
+      class="col"
+    >
+      No approval step
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ApprovalList.vue should not render any approval when the list is empty 1`] = `
+<div
+  class="container py-4 container--fluid"
+>
+  <div
+    class="row"
+  >
+    <div
+      class="col"
+    >
+      No approval step
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ApprovalList.vue should render approvals when the list is with more than one item 1`] = `
+<div
+  class="container py-4 container--fluid"
+>
+  <div
+    class="row"
+  >
+    <div
+      class="col"
+    >
+      <div
+        class="smooth-dnd-container vertical"
+      >
+        <div
+          class="smooth-dnd-draggable-wrapper"
+        >
+          <div
+            class="draggable-item"
+          >
+            <div
+              class="container"
+            >
+              <div
+                class="v-card v-sheet theme--light"
+              >
+                <div
+                  class="v-card__title"
+                >
+                  <i
+                    aria-hidden="true"
+                    class="v-icon notranslate column-drag-handle mb-1 mr-3 mdi mdi-menu theme--light"
+                  />
+                   
+                  <i
+                    aria-hidden="true"
+                    class="v-icon notranslate mb-1 mr-3 mdi mdi-account-multiple-check theme--light"
+                  />
+                   
+                  <span
+                    class="title font-weight-light"
+                  >
+                    Should be approved by the users who
+                  </span>
+                   
+                  <div
+                    class="flex-grow-1"
+                  />
+                   
+                  <div
+                    class="mt-5 v-speed-dial v-speed-dial--right v-speed-dial--bottom v-speed-dial--direction-left"
+                  >
+                    <button
+                      class="v-btn v-btn--contained v-btn--fab v-btn--round theme--dark v-size--small primary"
+                      type="button"
+                    >
+                      <span
+                        class="v-btn__content"
+                      >
+                        <i
+                          aria-hidden="true"
+                          class="v-icon notranslate mdi mdi-settings theme--dark"
+                        />
+                      </span>
+                    </button>
+                    <span
+                      class="v-speed-dial__list"
+                    />
+                  </div>
+                </div>
+                 
+                <div
+                  class="v-card__text"
+                >
+                  <div
+                    class="row"
+                  >
+                    <div
+                      class="col"
+                    >
+                      <!---->
+                       
+                      <!---->
+                       
+                      <div
+                        class="row"
+                      >
+                        <!---->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               
+              <div
+                class="v-dialog__container"
+                role="dialog"
+              >
+                <div
+                  class="v-dialog__content"
+                  role="document"
+                  style="z-index: 0;"
+                >
+                  <div
+                    class="v-dialog"
+                    style="max-width: 800px; display: none;"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="smooth-dnd-draggable-wrapper"
+        >
+          <div
+            class="draggable-item"
+          >
+            <div
+              class="container"
+            >
+              <div
+                class="v-card v-sheet theme--light"
+              >
+                <div
+                  class="v-card__title"
+                >
+                  <i
+                    aria-hidden="true"
+                    class="v-icon notranslate column-drag-handle mb-1 mr-3 mdi mdi-menu theme--light"
+                  />
+                   
+                  <i
+                    aria-hidden="true"
+                    class="v-icon notranslate mb-1 mr-3 mdi mdi-account-multiple-check theme--light"
+                  />
+                   
+                  <span
+                    class="title font-weight-light"
+                  >
+                    Should be approved by the users who
+                  </span>
+                   
+                  <div
+                    class="flex-grow-1"
+                  />
+                   
+                  <div
+                    class="mt-5 v-speed-dial v-speed-dial--right v-speed-dial--bottom v-speed-dial--direction-left"
+                  >
+                    <button
+                      class="v-btn v-btn--contained v-btn--fab v-btn--round theme--dark v-size--small primary"
+                      type="button"
+                    >
+                      <span
+                        class="v-btn__content"
+                      >
+                        <i
+                          aria-hidden="true"
+                          class="v-icon notranslate mdi mdi-settings theme--dark"
+                        />
+                      </span>
+                    </button>
+                    <span
+                      class="v-speed-dial__list"
+                    />
+                  </div>
+                </div>
+                 
+                <div
+                  class="v-card__text"
+                >
+                  <div
+                    class="row"
+                  >
+                    <div
+                      class="col"
+                    >
+                      <!---->
+                       
+                      <!---->
+                       
+                      <div
+                        class="row"
+                      >
+                        <!---->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               
+              <div
+                class="v-dialog__container"
+                role="dialog"
+              >
+                <div
+                  class="v-dialog__content"
+                  role="document"
+                  style="z-index: 0;"
+                >
+                  <div
+                    class="v-dialog"
+                    style="max-width: 800px; display: none;"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="smooth-dnd-draggable-wrapper"
+        >
+          <div
+            class="draggable-item"
+          >
+            <div
+              class="container"
+            >
+              <div
+                class="v-card v-sheet theme--light"
+              >
+                <div
+                  class="v-card__title"
+                >
+                  <i
+                    aria-hidden="true"
+                    class="v-icon notranslate column-drag-handle mb-1 mr-3 mdi mdi-menu theme--light"
+                  />
+                   
+                  <i
+                    aria-hidden="true"
+                    class="v-icon notranslate mb-1 mr-3 mdi mdi-account-multiple-check theme--light"
+                  />
+                   
+                  <span
+                    class="title font-weight-light"
+                  >
+                    Should be approved by the users who
+                  </span>
+                   
+                  <div
+                    class="flex-grow-1"
+                  />
+                   
+                  <div
+                    class="mt-5 v-speed-dial v-speed-dial--right v-speed-dial--bottom v-speed-dial--direction-left"
+                  >
+                    <button
+                      class="v-btn v-btn--contained v-btn--fab v-btn--round theme--dark v-size--small primary"
+                      type="button"
+                    >
+                      <span
+                        class="v-btn__content"
+                      >
+                        <i
+                          aria-hidden="true"
+                          class="v-icon notranslate mdi mdi-settings theme--dark"
+                        />
+                      </span>
+                    </button>
+                    <span
+                      class="v-speed-dial__list"
+                    />
+                  </div>
+                </div>
+                 
+                <div
+                  class="v-card__text"
+                >
+                  <div
+                    class="row"
+                  >
+                    <div
+                      class="col"
+                    >
+                      <!---->
+                       
+                      <!---->
+                       
+                      <div
+                        class="row"
+                      >
+                        <!---->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               
+              <div
+                class="v-dialog__container"
+                role="dialog"
+              >
+                <div
+                  class="v-dialog__content"
+                  role="document"
+                  style="z-index: 0;"
+                >
+                  <div
+                    class="v-dialog"
+                    style="max-width: 800px; display: none;"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ApprovalList.vue should render approvals when the list is with one item 1`] = `
+<div
+  class="container py-4 container--fluid"
+>
+  <div
+    class="row"
+  >
+    <div
+      class="col"
+    >
+      <div
+        class="smooth-dnd-container vertical"
+      >
+        <div
+          class="smooth-dnd-draggable-wrapper"
+        >
+          <div
+            class="draggable-item"
+          >
+            <div
+              class="container"
+            >
+              <div
+                class="v-card v-sheet theme--light"
+              >
+                <div
+                  class="v-card__title"
+                >
+                  <i
+                    aria-hidden="true"
+                    class="v-icon notranslate column-drag-handle mb-1 mr-3 mdi mdi-menu theme--light"
+                  />
+                   
+                  <i
+                    aria-hidden="true"
+                    class="v-icon notranslate mb-1 mr-3 mdi mdi-account-multiple-check theme--light"
+                  />
+                   
+                  <span
+                    class="title font-weight-light"
+                  >
+                    Should be approved by the users who
+                  </span>
+                   
+                  <div
+                    class="flex-grow-1"
+                  />
+                   
+                  <div
+                    class="mt-5 v-speed-dial v-speed-dial--right v-speed-dial--bottom v-speed-dial--direction-left"
+                  >
+                    <button
+                      class="v-btn v-btn--contained v-btn--fab v-btn--round theme--dark v-size--small primary"
+                      type="button"
+                    >
+                      <span
+                        class="v-btn__content"
+                      >
+                        <i
+                          aria-hidden="true"
+                          class="v-icon notranslate mdi mdi-settings theme--dark"
+                        />
+                      </span>
+                    </button>
+                    <span
+                      class="v-speed-dial__list"
+                    />
+                  </div>
+                </div>
+                 
+                <div
+                  class="v-card__text"
+                >
+                  <div
+                    class="row"
+                  >
+                    <div
+                      class="col"
+                    >
+                      <!---->
+                       
+                      <!---->
+                       
+                      <div
+                        class="row"
+                      >
+                        <!---->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               
+              <div
+                class="v-dialog__container"
+                role="dialog"
+              >
+                <div
+                  class="v-dialog__content"
+                  role="document"
+                  style="z-index: 0;"
+                >
+                  <div
+                    class="v-dialog"
+                    style="max-width: 800px; display: none;"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ApprovalList.vue should update interanal items when approvals are updated 1`] = `
+<div
+  class="container py-4 container--fluid"
+>
+  <div
+    class="row"
+  >
+    <div
+      class="col"
+    >
+      <div
+        class="smooth-dnd-container vertical"
+      >
+        <div
+          class="smooth-dnd-draggable-wrapper"
+        >
+          <div
+            class="draggable-item"
+          >
+            <div
+              class="container"
+            >
+              <div
+                class="v-card v-sheet theme--light"
+              >
+                <div
+                  class="v-card__title"
+                >
+                  <!---->
+                   
+                  <i
+                    aria-hidden="true"
+                    class="v-icon notranslate mb-1 mr-3 mdi mdi-account-multiple-check theme--light"
+                  />
+                   
+                  <span
+                    class="title font-weight-light"
+                  >
+                    Should be approved by the users who
+                  </span>
+                   
+                  <div
+                    class="flex-grow-1"
+                  />
+                   
+                  <!---->
+                </div>
+                 
+                <div
+                  class="v-card__text"
+                >
+                  <div
+                    class="row"
+                  >
+                    <div
+                      class="col"
+                    >
+                      <!---->
+                       
+                      <!---->
+                       
+                      <div
+                        class="row"
+                      >
+                        <!---->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               
+              <div
+                class="v-dialog__container"
+                role="dialog"
+              >
+                <div
+                  class="v-dialog__content"
+                  role="document"
+                  style="z-index: 0;"
+                >
+                  <div
+                    class="v-dialog"
+                    style="max-width: 800px; display: none;"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="smooth-dnd-draggable-wrapper"
+        >
+          <div
+            class="draggable-item"
+          >
+            <div
+              class="container"
+            >
+              <div
+                class="v-card v-sheet theme--light"
+              >
+                <div
+                  class="v-card__title"
+                >
+                  <!---->
+                   
+                  <i
+                    aria-hidden="true"
+                    class="v-icon notranslate mb-1 mr-3 mdi mdi-account-multiple-check theme--light"
+                  />
+                   
+                  <span
+                    class="title font-weight-light"
+                  >
+                    Should be approved by the users who
+                  </span>
+                   
+                  <div
+                    class="flex-grow-1"
+                  />
+                   
+                  <!---->
+                </div>
+                 
+                <div
+                  class="v-card__text"
+                >
+                  <div
+                    class="row"
+                  >
+                    <div
+                      class="col"
+                    >
+                      <!---->
+                       
+                      <!---->
+                       
+                      <div
+                        class="row"
+                      >
+                        <!---->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               
+              <div
+                class="v-dialog__container"
+                role="dialog"
+              >
+                <div
+                  class="v-dialog__content"
+                  role="document"
+                  style="z-index: 0;"
+                >
+                  <div
+                    class="v-dialog"
+                    style="max-width: 800px; display: none;"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="smooth-dnd-draggable-wrapper"
+        >
+          <div
+            class="draggable-item"
+          >
+            <div
+              class="container"
+            >
+              <div
+                class="v-card v-sheet theme--light"
+              >
+                <div
+                  class="v-card__title"
+                >
+                  <!---->
+                   
+                  <i
+                    aria-hidden="true"
+                    class="v-icon notranslate mb-1 mr-3 mdi mdi-account-multiple-check theme--light"
+                  />
+                   
+                  <span
+                    class="title font-weight-light"
+                  >
+                    Should be approved by the users who
+                  </span>
+                   
+                  <div
+                    class="flex-grow-1"
+                  />
+                   
+                  <!---->
+                </div>
+                 
+                <div
+                  class="v-card__text"
+                >
+                  <div
+                    class="row"
+                  >
+                    <div
+                      class="col"
+                    >
+                      <!---->
+                       
+                      <!---->
+                       
+                      <div
+                        class="row"
+                      >
+                        <!---->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               
+              <div
+                class="v-dialog__container"
+                role="dialog"
+              >
+                <div
+                  class="v-dialog__content"
+                  role="document"
+                  style="z-index: 0;"
+                >
+                  <div
+                    class="v-dialog"
+                    style="max-width: 800px; display: none;"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

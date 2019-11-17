@@ -1,0 +1,8 @@
+{
+    "vetur.format.defaultFormatterOptions": {
+        "prettier": {
+            "printWidth": 160
+        }
+    },
+    "jest.pathToConfig": "jest.config.js"
+}

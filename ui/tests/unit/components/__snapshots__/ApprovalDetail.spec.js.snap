@@ -1,0 +1,1214 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ApprovalDetail.vue should emit event on deleting the approval 1`] = `
+<div
+  class="container"
+>
+  <div
+    class="v-card v-sheet theme--light"
+  >
+    <div
+      class="v-card__title"
+    >
+      <!---->
+       
+      <i
+        aria-hidden="true"
+        class="v-icon notranslate mb-1 mr-3 mdi mdi-account-multiple-check theme--light"
+      />
+       
+      <span
+        class="title font-weight-light"
+      >
+        Should be approved by the users who
+      </span>
+       
+      <div
+        class="flex-grow-1"
+      />
+       
+      <!---->
+    </div>
+     
+    <div
+      class="v-card__text"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col"
+        >
+          <!---->
+           
+          <!---->
+           
+          <div
+            class="row"
+          >
+            <!---->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+  <div
+    class="v-dialog__container"
+    role="dialog"
+  >
+    <div
+      class="v-dialog__content"
+      role="document"
+      style="z-index: 0;"
+    >
+      <div
+        class="v-dialog"
+        style="max-width: 800px; display: none;"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ApprovalDetail.vue should emit event on deleting the approval 2`] = `
+<div
+  class="container"
+>
+  <div
+    class="v-card v-sheet theme--light"
+  >
+    <div
+      class="v-card__title"
+    >
+      <!---->
+       
+      <i
+        aria-hidden="true"
+        class="v-icon notranslate mb-1 mr-3 mdi mdi-account-multiple-check theme--light"
+      />
+       
+      <span
+        class="title font-weight-light"
+      >
+        Should be approved by the users who
+      </span>
+       
+      <div
+        class="flex-grow-1"
+      />
+       
+      <!---->
+    </div>
+     
+    <div
+      class="v-card__text"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col"
+        >
+          <!---->
+           
+          <!---->
+           
+          <div
+            class="row"
+          >
+            <!---->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+  <div
+    class="v-dialog__container"
+    role="dialog"
+  >
+    <div
+      class="v-dialog__content"
+      role="document"
+      style="z-index: 0;"
+    >
+      <div
+        class="v-dialog"
+        style="max-width: 800px; display: none;"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ApprovalDetail.vue should not render dragging icon when it is not editable 1`] = `
+<div
+  class="container"
+>
+  <div
+    class="v-card v-sheet theme--light"
+  >
+    <div
+      class="v-card__title"
+    >
+      <!---->
+       
+      <i
+        aria-hidden="true"
+        class="v-icon notranslate mb-1 mr-3 mdi mdi-account-multiple-check theme--light"
+      />
+       
+      <span
+        class="title font-weight-light"
+      >
+        Should be approved by the users who
+      </span>
+       
+      <div
+        class="flex-grow-1"
+      />
+       
+      <!---->
+    </div>
+     
+    <div
+      class="v-card__text"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col"
+        >
+          <!---->
+           
+          <!---->
+           
+          <div
+            class="row"
+          >
+            <!---->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+  <div
+    class="v-dialog__container"
+    role="dialog"
+  >
+    <div
+      class="v-dialog__content"
+      role="document"
+      style="z-index: 0;"
+    >
+      <div
+        class="v-dialog"
+        style="max-width: 800px; display: none;"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ApprovalDetail.vue should not render groups lane when the group list is empty 1`] = `
+<div
+  class="container"
+>
+  <div
+    class="v-card v-sheet theme--light"
+  >
+    <div
+      class="v-card__title"
+    >
+      <i
+        aria-hidden="true"
+        class="v-icon notranslate column-drag-handle mb-1 mr-3 mdi mdi-menu theme--light"
+      />
+       
+      <i
+        aria-hidden="true"
+        class="v-icon notranslate mb-1 mr-3 mdi mdi-account-multiple-check theme--light"
+      />
+       
+      <span
+        class="title font-weight-light"
+      >
+        Should be approved by the users who
+      </span>
+       
+      <div
+        class="flex-grow-1"
+      />
+       
+      <div
+        class="mt-5 v-speed-dial v-speed-dial--right v-speed-dial--bottom v-speed-dial--direction-left"
+      >
+        <button
+          class="v-btn v-btn--contained v-btn--fab v-btn--round theme--dark v-size--small primary"
+          type="button"
+        >
+          <span
+            class="v-btn__content"
+          >
+            <i
+              aria-hidden="true"
+              class="v-icon notranslate mdi mdi-settings theme--dark"
+            />
+          </span>
+        </button>
+        <span
+          class="v-speed-dial__list"
+        />
+      </div>
+    </div>
+     
+    <div
+      class="v-card__text"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col"
+        >
+          <!---->
+           
+          <!---->
+           
+          <div
+            class="row"
+          >
+            <!---->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+  <div
+    class="v-dialog__container"
+    role="dialog"
+  >
+    <div
+      class="v-dialog__content"
+      role="document"
+      style="z-index: 0;"
+    >
+      <div
+        class="v-dialog"
+        style="max-width: 800px; display: none;"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ApprovalDetail.vue should not render permissions lane when the permissions list is empty 1`] = `
+<div
+  class="container"
+>
+  <div
+    class="v-card v-sheet theme--light"
+  >
+    <div
+      class="v-card__title"
+    >
+      <i
+        aria-hidden="true"
+        class="v-icon notranslate column-drag-handle mb-1 mr-3 mdi mdi-menu theme--light"
+      />
+       
+      <i
+        aria-hidden="true"
+        class="v-icon notranslate mb-1 mr-3 mdi mdi-account-multiple-check theme--light"
+      />
+       
+      <span
+        class="title font-weight-light"
+      >
+        Should be approved by the users who
+      </span>
+       
+      <div
+        class="flex-grow-1"
+      />
+       
+      <div
+        class="mt-5 v-speed-dial v-speed-dial--right v-speed-dial--bottom v-speed-dial--direction-left"
+      >
+        <button
+          class="v-btn v-btn--contained v-btn--fab v-btn--round theme--dark v-size--small primary"
+          type="button"
+        >
+          <span
+            class="v-btn__content"
+          >
+            <i
+              aria-hidden="true"
+              class="v-icon notranslate mdi mdi-settings theme--dark"
+            />
+          </span>
+        </button>
+        <span
+          class="v-speed-dial__list"
+        />
+      </div>
+    </div>
+     
+    <div
+      class="v-card__text"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col"
+        >
+          <!---->
+           
+          <!---->
+           
+          <div
+            class="row"
+          >
+            <!---->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+  <div
+    class="v-dialog__container"
+    role="dialog"
+  >
+    <div
+      class="v-dialog__content"
+      role="document"
+      style="z-index: 0;"
+    >
+      <div
+        class="v-dialog"
+        style="max-width: 800px; display: none;"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ApprovalDetail.vue should not render settings button if not editable 1`] = `
+<div
+  class="container"
+>
+  <div
+    class="v-card v-sheet theme--light"
+  >
+    <div
+      class="v-card__title"
+    >
+      <!---->
+       
+      <i
+        aria-hidden="true"
+        class="v-icon notranslate mb-1 mr-3 mdi mdi-account-multiple-check theme--light"
+      />
+       
+      <span
+        class="title font-weight-light"
+      >
+        Should be approved by the users who
+      </span>
+       
+      <div
+        class="flex-grow-1"
+      />
+       
+      <!---->
+    </div>
+     
+    <div
+      class="v-card__text"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col"
+        >
+          <!---->
+           
+          <!---->
+           
+          <div
+            class="row"
+          >
+            <!---->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+  <div
+    class="v-dialog__container"
+    role="dialog"
+  >
+    <div
+      class="v-dialog__content"
+      role="document"
+      style="z-index: 0;"
+    >
+      <div
+        class="v-dialog"
+        style="max-width: 800px; display: none;"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ApprovalDetail.vue should not render the buttons in the settings as default 1`] = `
+<div
+  class="container"
+>
+  <div
+    class="v-card v-sheet theme--light"
+  >
+    <div
+      class="v-card__title"
+    >
+      <!---->
+       
+      <i
+        aria-hidden="true"
+        class="v-icon notranslate mb-1 mr-3 mdi mdi-account-multiple-check theme--light"
+      />
+       
+      <span
+        class="title font-weight-light"
+      >
+        Should be approved by the users who
+      </span>
+       
+      <div
+        class="flex-grow-1"
+      />
+       
+      <!---->
+    </div>
+     
+    <div
+      class="v-card__text"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col"
+        >
+          <!---->
+           
+          <!---->
+           
+          <div
+            class="row"
+          >
+            <!---->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+  <div
+    class="v-dialog__container"
+    role="dialog"
+  >
+    <div
+      class="v-dialog__content"
+      role="document"
+      style="z-index: 0;"
+    >
+      <div
+        class="v-dialog"
+        style="max-width: 800px; display: none;"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ApprovalDetail.vue should render approval icon correctly 1`] = `
+<div
+  class="container"
+>
+  <div
+    class="v-card v-sheet theme--light"
+  >
+    <div
+      class="v-card__title"
+    >
+      <i
+        aria-hidden="true"
+        class="v-icon notranslate column-drag-handle mb-1 mr-3 mdi mdi-menu theme--light"
+      />
+       
+      <i
+        aria-hidden="true"
+        class="v-icon notranslate mb-1 mr-3 mdi mdi-account-multiple-check theme--light"
+      />
+       
+      <span
+        class="title font-weight-light"
+      >
+        Should be approved by the users who
+      </span>
+       
+      <div
+        class="flex-grow-1"
+      />
+       
+      <div
+        class="mt-5 v-speed-dial v-speed-dial--right v-speed-dial--bottom v-speed-dial--direction-left"
+      >
+        <button
+          class="v-btn v-btn--contained v-btn--fab v-btn--round theme--dark v-size--small primary"
+          type="button"
+        >
+          <span
+            class="v-btn__content"
+          >
+            <i
+              aria-hidden="true"
+              class="v-icon notranslate mdi mdi-settings theme--dark"
+            />
+          </span>
+        </button>
+        <span
+          class="v-speed-dial__list"
+        />
+      </div>
+    </div>
+     
+    <div
+      class="v-card__text"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col"
+        >
+          <!---->
+           
+          <!---->
+           
+          <div
+            class="row"
+          >
+            <!---->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+  <div
+    class="v-dialog__container"
+    role="dialog"
+  >
+    <div
+      class="v-dialog__content"
+      role="document"
+      style="z-index: 0;"
+    >
+      <div
+        class="v-dialog"
+        style="max-width: 800px; display: none;"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ApprovalDetail.vue should render dragging icon when it is editable 1`] = `
+<div
+  class="container"
+>
+  <div
+    class="v-card v-sheet theme--light"
+  >
+    <div
+      class="v-card__title"
+    >
+      <i
+        aria-hidden="true"
+        class="v-icon notranslate column-drag-handle mb-1 mr-3 mdi mdi-menu theme--light"
+      />
+       
+      <i
+        aria-hidden="true"
+        class="v-icon notranslate mb-1 mr-3 mdi mdi-account-multiple-check theme--light"
+      />
+       
+      <span
+        class="title font-weight-light"
+      >
+        Should be approved by the users who
+      </span>
+       
+      <div
+        class="flex-grow-1"
+      />
+       
+      <div
+        class="mt-5 v-speed-dial v-speed-dial--right v-speed-dial--bottom v-speed-dial--direction-left"
+      >
+        <button
+          class="v-btn v-btn--contained v-btn--fab v-btn--round theme--dark v-size--small primary"
+          type="button"
+        >
+          <span
+            class="v-btn__content"
+          >
+            <i
+              aria-hidden="true"
+              class="v-icon notranslate mdi mdi-settings theme--dark"
+            />
+          </span>
+        </button>
+        <span
+          class="v-speed-dial__list"
+        />
+      </div>
+    </div>
+     
+    <div
+      class="v-card__text"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col"
+        >
+          <!---->
+           
+          <!---->
+           
+          <div
+            class="row"
+          >
+            <!---->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+  <div
+    class="v-dialog__container"
+    role="dialog"
+  >
+    <div
+      class="v-dialog__content"
+      role="document"
+      style="z-index: 0;"
+    >
+      <div
+        class="v-dialog"
+        style="max-width: 800px; display: none;"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ApprovalDetail.vue should render groups lane when the group list is not empty 1`] = `
+<div
+  class="container"
+>
+  <div
+    class="v-card v-sheet theme--light"
+  >
+    <div
+      class="v-card__title"
+    >
+      <i
+        aria-hidden="true"
+        class="v-icon notranslate column-drag-handle mb-1 mr-3 mdi mdi-menu theme--light"
+      />
+       
+      <i
+        aria-hidden="true"
+        class="v-icon notranslate mb-1 mr-3 mdi mdi-account-multiple-check theme--light"
+      />
+       
+      <span
+        class="title font-weight-light"
+      >
+        Should be approved by the users who
+      </span>
+       
+      <div
+        class="flex-grow-1"
+      />
+       
+      <div
+        class="mt-5 v-speed-dial v-speed-dial--right v-speed-dial--bottom v-speed-dial--direction-left"
+      >
+        <button
+          class="v-btn v-btn--contained v-btn--fab v-btn--round theme--dark v-size--small primary"
+          type="button"
+        >
+          <span
+            class="v-btn__content"
+          >
+            <i
+              aria-hidden="true"
+              class="v-icon notranslate mdi mdi-settings theme--dark"
+            />
+          </span>
+        </button>
+        <span
+          class="v-speed-dial__list"
+        />
+      </div>
+    </div>
+     
+    <div
+      class="v-card__text"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col"
+        >
+          <!---->
+           
+          <div
+            class="row groups-lane"
+          >
+            <div
+              class="col col-4"
+            >
+              <label>
+                are in groups:
+              </label>
+            </div>
+             
+            <div
+              class="col"
+            >
+              <span>
+                <span
+                  class="white--text v-chip theme--light v-size--default primary"
+                >
+                  <span
+                    class="v-chip__content"
+                  >
+                    <i
+                      aria-hidden="true"
+                      class="v-icon notranslate v-icon--left mdi mdi-account-multiple theme--light"
+                    />
+                     
+                    <span>
+                      group-1
+                    </span>
+                  </span>
+                </span>
+                 
+                <span>
+                  or
+                </span>
+              </span>
+              <span>
+                <span
+                  class="white--text v-chip theme--light v-size--default primary"
+                >
+                  <span
+                    class="v-chip__content"
+                  >
+                    <i
+                      aria-hidden="true"
+                      class="v-icon notranslate v-icon--left mdi mdi-account-multiple theme--light"
+                    />
+                     
+                    <span>
+                      group-2
+                    </span>
+                  </span>
+                </span>
+                 
+                <!---->
+              </span>
+            </div>
+          </div>
+           
+          <div
+            class="row"
+          >
+            <!---->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+  <div
+    class="v-dialog__container"
+    role="dialog"
+  >
+    <div
+      class="v-dialog__content"
+      role="document"
+      style="z-index: 0;"
+    >
+      <div
+        class="v-dialog"
+        style="max-width: 800px; display: none;"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ApprovalDetail.vue should render permissions lane when the permission list is not empty 1`] = `
+<div
+  class="container"
+>
+  <div
+    class="v-card v-sheet theme--light"
+  >
+    <div
+      class="v-card__title"
+    >
+      <i
+        aria-hidden="true"
+        class="v-icon notranslate column-drag-handle mb-1 mr-3 mdi mdi-menu theme--light"
+      />
+       
+      <i
+        aria-hidden="true"
+        class="v-icon notranslate mb-1 mr-3 mdi mdi-account-multiple-check theme--light"
+      />
+       
+      <span
+        class="title font-weight-light"
+      >
+        Should be approved by the users who
+      </span>
+       
+      <div
+        class="flex-grow-1"
+      />
+       
+      <div
+        class="mt-5 v-speed-dial v-speed-dial--right v-speed-dial--bottom v-speed-dial--direction-left"
+      >
+        <button
+          class="v-btn v-btn--contained v-btn--fab v-btn--round theme--dark v-size--small primary"
+          type="button"
+        >
+          <span
+            class="v-btn__content"
+          >
+            <i
+              aria-hidden="true"
+              class="v-icon notranslate mdi mdi-settings theme--dark"
+            />
+          </span>
+        </button>
+        <span
+          class="v-speed-dial__list"
+        />
+      </div>
+    </div>
+     
+    <div
+      class="v-card__text"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col"
+        >
+          <div
+            class="row permissions-lane"
+          >
+            <div
+              class="col col-4"
+            >
+              <label>
+                have permissions:
+              </label>
+            </div>
+             
+            <div
+              class="col"
+            >
+              <span>
+                <span
+                  class="white--text v-chip theme--light v-size--default primary"
+                >
+                  <span
+                    class="v-chip__content"
+                  >
+                    <i
+                      aria-hidden="true"
+                      class="v-icon notranslate v-icon--left mdi mdi-lock theme--light"
+                    />
+                     
+                    <span>
+                      permission-1
+                    </span>
+                  </span>
+                </span>
+                 
+                <span>
+                  or
+                </span>
+              </span>
+              <span>
+                <span
+                  class="white--text v-chip theme--light v-size--default primary"
+                >
+                  <span
+                    class="v-chip__content"
+                  >
+                    <i
+                      aria-hidden="true"
+                      class="v-icon notranslate v-icon--left mdi mdi-lock theme--light"
+                    />
+                     
+                    <span>
+                      permission-2
+                    </span>
+                  </span>
+                </span>
+                 
+                <!---->
+              </span>
+            </div>
+          </div>
+           
+          <!---->
+           
+          <div
+            class="row"
+          >
+            <!---->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+  <div
+    class="v-dialog__container"
+    role="dialog"
+  >
+    <div
+      class="v-dialog__content"
+      role="document"
+      style="z-index: 0;"
+    >
+      <div
+        class="v-dialog"
+        style="max-width: 800px; display: none;"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ApprovalDetail.vue should render settings button if editable 1`] = `
+<div
+  class="container"
+>
+  <div
+    class="v-card v-sheet theme--light"
+  >
+    <div
+      class="v-card__title"
+    >
+      <i
+        aria-hidden="true"
+        class="v-icon notranslate column-drag-handle mb-1 mr-3 mdi mdi-menu theme--light"
+      />
+       
+      <i
+        aria-hidden="true"
+        class="v-icon notranslate mb-1 mr-3 mdi mdi-account-multiple-check theme--light"
+      />
+       
+      <span
+        class="title font-weight-light"
+      >
+        Should be approved by the users who
+      </span>
+       
+      <div
+        class="flex-grow-1"
+      />
+       
+      <div
+        class="mt-5 v-speed-dial v-speed-dial--right v-speed-dial--bottom v-speed-dial--direction-left"
+      >
+        <button
+          class="v-btn v-btn--contained v-btn--fab v-btn--round theme--dark v-size--small primary"
+          type="button"
+        >
+          <span
+            class="v-btn__content"
+          >
+            <i
+              aria-hidden="true"
+              class="v-icon notranslate mdi mdi-settings theme--dark"
+            />
+          </span>
+        </button>
+        <span
+          class="v-speed-dial__list"
+        />
+      </div>
+    </div>
+     
+    <div
+      class="v-card__text"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col"
+        >
+          <!---->
+           
+          <!---->
+           
+          <div
+            class="row"
+          >
+            <!---->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+  <div
+    class="v-dialog__container"
+    role="dialog"
+  >
+    <div
+      class="v-dialog__content"
+      role="document"
+      style="z-index: 0;"
+    >
+      <div
+        class="v-dialog"
+        style="max-width: 800px; display: none;"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ApprovalDetail.vue should render title correctly 1`] = `
+<div
+  class="container"
+>
+  <div
+    class="v-card v-sheet theme--light"
+  >
+    <div
+      class="v-card__title"
+    >
+      <i
+        aria-hidden="true"
+        class="v-icon notranslate column-drag-handle mb-1 mr-3 mdi mdi-menu theme--light"
+      />
+       
+      <i
+        aria-hidden="true"
+        class="v-icon notranslate mb-1 mr-3 mdi mdi-account-multiple-check theme--light"
+      />
+       
+      <span
+        class="title font-weight-light"
+      >
+        Should be approved by the users who
+      </span>
+       
+      <div
+        class="flex-grow-1"
+      />
+       
+      <div
+        class="mt-5 v-speed-dial v-speed-dial--right v-speed-dial--bottom v-speed-dial--direction-left"
+      >
+        <button
+          class="v-btn v-btn--contained v-btn--fab v-btn--round theme--dark v-size--small primary"
+          type="button"
+        >
+          <span
+            class="v-btn__content"
+          >
+            <i
+              aria-hidden="true"
+              class="v-icon notranslate mdi mdi-settings theme--dark"
+            />
+          </span>
+        </button>
+        <span
+          class="v-speed-dial__list"
+        />
+      </div>
+    </div>
+     
+    <div
+      class="v-card__text"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col"
+        >
+          <!---->
+           
+          <!---->
+           
+          <div
+            class="row"
+          >
+            <!---->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+  <div
+    class="v-dialog__container"
+    role="dialog"
+  >
+    <div
+      class="v-dialog__content"
+      role="document"
+      style="z-index: 0;"
+    >
+      <div
+        class="v-dialog"
+        style="max-width: 800px; display: none;"
+      />
+    </div>
+  </div>
+</div>
+`;
