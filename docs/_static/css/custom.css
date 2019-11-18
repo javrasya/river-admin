@@ -1,0 +1,63 @@
+.wy-nav-content{
+    max-width: 70% !important;
+}
+
+#river-admin > h1 {
+    text-align: center;
+}
+
+
+
+#slideshow { 
+    margin: 50px auto; 
+    position: relative; 
+    width: 325px; 
+    height: 200px; 
+    padding: 10px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+}
+
+@media only screen 
+and (min-width : 824px) {
+    #slideshow { 
+        margin: 50px auto; 
+        position: relative; 
+        width: 500px; 
+        height: 300px; 
+        padding: 10px; 
+        box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+    }
+}
+
+@media only screen 
+and (min-width : 1424px) {
+    #slideshow { 
+        margin: 50px auto; 
+        position: relative; 
+        width: 700px; 
+        height: 425px; 
+        padding: 10px; 
+        box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+    }
+}
+
+@media only screen 
+and (min-width : 1824px) {
+    #slideshow { 
+        margin: 50px auto; 
+        position: relative; 
+        width: 1000px; 
+        height: 600px; 
+        padding: 10px; 
+        box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+    }
+}
+
+
+#slideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}
