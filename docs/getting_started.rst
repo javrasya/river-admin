@@ -95,3 +95,7 @@ Enable the example app and then run your application
        ]
 
 |Issue Tracking Workflow Img|
+
+
+.. toctree::
+   :maxdepth: 2

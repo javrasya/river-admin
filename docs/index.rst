@@ -70,6 +70,7 @@ Contents
 
    getting_started
    authentication
+   workflow/index
 
 
 Indices and tables

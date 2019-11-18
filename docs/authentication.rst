@@ -24,3 +24,6 @@ Django admin. So you will be asked to login with your user;
 Once user is logged in, they won't be asked by their credentials
 until they are logged out or their minimum required permission
 described above is revoked.
+
+.. toctree::
+   :maxdepth: 2
