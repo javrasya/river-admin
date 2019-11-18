@@ -39,6 +39,7 @@ Each will be documented in detail but here what you can briefly have with ``Rive
 * List states and delete them
 * See a specific workflow object timeline to what has happened and what will possibly happen
 * Have your hooks run for a specific workflow object instead of running them for every object in the workflow.
+* Your django authorizations will still be ruling here.
 
 
 .. _django-river: https://github.com/javrasya/django-river/
@@ -66,6 +67,8 @@ Contents
 
 .. toctree::
    :maxdepth: 2
+
+   getting_started
 
 
 Indices and tables
