@@ -27,8 +27,8 @@ and the state field along with the content type and later
 on the transitons buy just clicking.
 
 
-Initializing Worklfow
----------------------
+Initiale Worklfow
+-----------------
 
 * if you haven't had any worklow before, ``Home`` page will wellcome you with a button which will take yo to the workflow creation page. If you have had a workflow before then just click the plus button on the right bottom corner to navigate to the page.
 
@@ -44,16 +44,18 @@ Initializing Worklfow
 |Select Initial State Img|
 
 
-Creating Transitions
---------------------
+Create Transitions
+------------------
 
-This is the most fun part of ``River Admin``. Becuase it provides a highly interactive one screen to create them all. 
+This is the most fun part of ``River Admin``. Becuase
+it provides a highly interactive one screen to create them all.
 
 .. note::
     Every change you make on that screen is an online action. Meaning that it will also be applied on the DB.
 
 .. note::
-    Same screen can anytime be used to update the transitions in the workflow as well    
+    Same screen can anytime be used to update the
+    transitions in the workflow as well
 
 * What you are going to run into after you have done the previous steps is something like this;
 

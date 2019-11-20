@@ -7,4 +7,4 @@ Workflow Guide
     :maxdepth: 2
 
     create_workflow
-    
+    list_workflow

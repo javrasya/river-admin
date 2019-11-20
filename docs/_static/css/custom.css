@@ -60,3 +60,14 @@ and (min-width : 1824px) {
     right: 10px; 
     bottom: 10px; 
 }
+
+.center {
+    text-align: center;
+}
+
+.center  img {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
