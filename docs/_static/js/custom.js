@@ -11,3 +11,5 @@ setInterval(function () {
         .end()
         .appendTo('#slideshow');
 }, 3000);
+
+$('a').attr({ target: "_blank" });

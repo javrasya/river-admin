@@ -74,6 +74,7 @@ Contents
    getting_started
    authentication
    workflow/index
+   function/index
 
 
 Indices and tables
