@@ -62,8 +62,8 @@ please take a look at :ref:`how to naivagate authorizations`
     convinience. By this it is very smooth to create your workflow
     along with your hooks all together.
 
-Transition Hooks
-----------------
+Create Transition Hooks
+-----------------------
 
 Transition hooks can be defined for whole transition. It means that
 the hook will be executed right before the transition happens.
@@ -80,8 +80,8 @@ After you create, it should look like this;
 
 |Transition Hook Created|
 
-Approval Hooks
---------------
+Create Approval Hooks
+---------------------
 
 Approval hooks can be defined for a specific authorization rule
 not for whole transition. After the authorization rule is approved

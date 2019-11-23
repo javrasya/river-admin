@@ -29,8 +29,8 @@ Installation
 
        INSTALLED_APPS=[
            ...
-           river,
-           river-admin
+           'river',
+           'river-admin'
            ...
        ]
 
@@ -84,8 +84,8 @@ Enable the example app and then run your application
 
        INSTALLED_APPS=[
            ...
-           river,
-           river-admin,
+           'river',
+           'river-admin',
            'river_admin_shipping_example',
            ...
        ]
@@ -102,8 +102,8 @@ Enable the example app and then run your application
 
        INSTALLED_APPS=[
            ...
-           river,
-           river-admin,
+           'river',
+           'river-admin',
            'river_admin_issue_tracker_example',
            ...
        ]

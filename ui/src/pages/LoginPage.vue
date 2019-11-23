@@ -68,7 +68,7 @@ export default {
               }
             } else {
               this.$store.commit("unSetAuthToken");
-              emit_error(["You must have the permission to view the workflows!"], 10000);
+              emit_error(["You has to have the permission to view the workflows!"], 10000);
             }
           });
         })

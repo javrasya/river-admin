@@ -10,6 +10,8 @@ setInterval(function () {
         .fadeIn(1000)
         .end()
         .appendTo('#slideshow');
-}, 3000);
+}, 2000);
 
 $('a').attr({ target: "_blank" });
+
+$('div.wy-menu a').attr({ target: "_self" })

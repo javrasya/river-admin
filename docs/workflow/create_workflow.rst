@@ -20,7 +20,11 @@ Create Workflow
     Before you can set up your workflow, your app integration
     with ``django-river`` must be done. Don't worry it
     is with the easiest setup.To see how to do it with
-    ``django-river`` pleas have a look at `django-river`
+    ``django-river`` pleas have a look at ``django-river``
+
+.. note::
+    In order to see this page, your user has to have
+    ``river.add_workflow`` permission.
 
 Creating a workflow consist of defining its intiial state
 and the state field along with the content type and later

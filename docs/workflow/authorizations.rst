@@ -50,6 +50,10 @@ rules of the transitions.
 How to Navigate
 ---------------
 
+.. note::
+    In order to see this page, your user has to have ``river.view_workflow``
+    together with ``river.change_workflow`` permissions.
+
 In order to go to that screen you can either be navigated from the home screen
 by clicking the "Edit Workflow Rules" button;
 
