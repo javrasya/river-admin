@@ -1,4 +1,4 @@
-.. _create-or-update-function:
+.. _`Create or Update Function`:
 
 .. |Create Function| image:: /_static/images/create-function.png
 

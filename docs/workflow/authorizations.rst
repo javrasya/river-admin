@@ -45,6 +45,8 @@ capability and providing a user friendly, easy to use screens to do that on top
 of ``django-river``. One of these screens is managing the authorization
 rules of the transitions.
 
+.. _how to naivagate authorizations:
+
 How to Navigate
 ---------------
 

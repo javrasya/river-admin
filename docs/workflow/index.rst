@@ -9,3 +9,4 @@ Workflow Guide
     create_workflow
     list_workflow
     authorizations
+    hooks
