@@ -31,6 +31,7 @@ comes with bunch of button that allows you to go to a workflow's
 pages and a button to delete it.
 
 .. rst-class:: center
+
 |Go to View Workflow|
 |Go To Edit Workflow|
 |Go To Workflow Authorizations|

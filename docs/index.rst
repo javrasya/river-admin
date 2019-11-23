@@ -11,9 +11,12 @@
 River Admin
 ===========
 
-River Admin is a very modern and shiny web application functioning 
-like an admin interface that provides administration for django-river_ .  
-It can either be deployed as standalone or bundled in your application
+River Admin is a very modern and shiny web application functioning
+like an admin interface that provides administration for django-river_ .
+It basically extends the ``django-river`` flexibility with some user
+friendly and very easy to use admin interfaces.
+
+It can either be deployed as a standalone application on top or bundled in your application
 since it is yet another library you can install via package manager.
 
 The power of it comes from the libraries it uses on both backend and

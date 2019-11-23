@@ -13,8 +13,8 @@
 .. |Scond Second Is Created Img| image:: /_static/images/second-state-is-created.png
 
 
-Create a Workflow
-=================
+Create Workflow
+===============
 
 .. note::
     Before you can set up your workflow, your app integration
