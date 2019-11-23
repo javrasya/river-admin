@@ -1,7 +1,7 @@
 .. _workflow_guide:
 
-Workflow Guide
-==============
+Workflows
+=========
 
 .. toctree::
     :maxdepth: 2

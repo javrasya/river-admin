@@ -150,9 +150,9 @@ export class TransitionHook {
         return {
             workflow: this.workflow.id,
             callback_function: this.callback_function.id,
-            transition_meta: this.transition_meta,
+            transition_meta: this.transition_meta || null,
             transition: this.transition || null,
-            object_id: this.workflow_object_id || null,
+            object_id: parseInt(this.workflow_object_id) || null,
             content_type: this.workflow_object_id ? this.workflow.content_type.id : null
         }
     }
@@ -170,12 +170,12 @@ export class ApprovalHook {
     }
 
     static of(id, workflow, callback_function, transition_approval_meta_id, transition_approval_id, workflow_object_id, is_executed) {
-        return new ApprovalHook(id, workflow, callback_function, transition_approval_meta_id, workflow_object_id, transition_approval_id, is_executed)
+        return new ApprovalHook(id, workflow, callback_function, transition_approval_meta_id, transition_approval_id, workflow_object_id, is_executed)
     }
 
     static create(workflow, callback_function, transition_approval_meta_id, transition_approval_id, workflow_object_id) {
         var id = '_' + Math.random().toString(36).substr(2, 9);
-        return new ApprovalHook(id, workflow, callback_function, transition_approval_meta_id, workflow_object_id, transition_approval_id, false)
+        return new ApprovalHook(id, workflow, callback_function, transition_approval_meta_id, transition_approval_id, workflow_object_id, false)
     }
 
     is_from_upstream() {
@@ -188,16 +188,17 @@ export class ApprovalHook {
             callback_function: this.callback_function.id,
             transition_approval_meta: this.transition_approval_meta_id,
             transition_approval: this.transition_approval_id || null,
-            object_id: this.workflow_object_id || null,
+            object_id: parseInt(this.workflow_object_id) || null,
             content_type: this.workflow_object_id ? this.workflow.content_type.id : null
         }
     }
 }
 
 export class ObjectTransition {
-    constructor(id, workflow, source_state_id, destination_state_id, object_id, iteration, is_cancelled, is_done) {
+    constructor(id, workflow, source_state_id, destination_state_id, transition_meta, object_id, iteration, is_cancelled, is_done) {
         this.id = id
         this.workflow = workflow
+        this.transition_meta = transition_meta
         this.source_state_id = source_state_id
         this.destination_state_id = destination_state_id
         this.object_id = object_id
@@ -208,16 +209,17 @@ export class ObjectTransition {
         this.is_done = is_done
     }
 
-    static of(id, workflow, source_state_id, destination_state_id, object_id, iteration, is_cancelled, is_done) {
-        return new ObjectTransition(id, workflow, source_state_id, destination_state_id, object_id, iteration, is_cancelled, is_done)
+    static of(id, workflow, source_state_id, destination_state_id, transition_meta, object_id, iteration, is_cancelled, is_done) {
+        return new ObjectTransition(id, workflow, source_state_id, destination_state_id, transition_meta, object_id, iteration, is_cancelled, is_done)
     }
 }
 
 export class ObjectApproval {
-    constructor(id, workflow, transition_meta, object_id, permissions, groups, priority, status, transactioner) {
+    constructor(id, workflow, transition_meta, transition_approval_meta, object_id, permissions, groups, priority, status, transactioner) {
         this.id = id
         this.workflow = workflow
         this.transition_meta = transition_meta
+        this.transition_approval_meta = transition_approval_meta
         this.object_id = object_id
         this.permissions = permissions
         this.groups = groups
@@ -227,7 +229,7 @@ export class ObjectApproval {
         this.transactioner = transactioner
     }
 
-    static of(id, workflow, transition_meta, object_id, permissions, groups, priority, status, transactioner) {
-        return new ObjectApproval(id, workflow, transition_meta, object_id, permissions, groups, priority, status, transactioner)
+    static of(id, workflow, transition_meta, transition_approval_meta, object_id, permissions, groups, priority, status, transactioner) {
+        return new ObjectApproval(id, workflow, transition_meta, transition_approval_meta, object_id, permissions, groups, priority, status, transactioner)
     }
 }

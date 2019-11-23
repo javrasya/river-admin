@@ -117,9 +117,8 @@
     >
       <CreateTransitionHookForm
         :workflow="workflow"
-        :source_state_id="selected_transition.source_state_id"
-        :destination_state_id="selected_transition.source_state_id"
-        :iteration="selected_transition.iteration"
+        :transition_meta="selected_transition.transition_meta"
+        :transition="selected_transition.id"
         :object_id="$route.params.object_id"
         :excluded_function_ids="selected_transition.hooks.map(hook => hook.callback_function.id)"
         @on-create="on_transition_hook_created"
@@ -295,6 +294,7 @@ export default {
               this.workflow,
               this.to_state_id(transition.iteration - 1, transition.source_state),
               this.to_state_id(transition.iteration, transition.destination_state),
+              transition.meta,
               transition.object_id,
               transition.iteration,
               transition.is_cancelled,
@@ -340,6 +340,7 @@ export default {
               transition_approval.id,
               this.workflow,
               transition_approval.transition,
+              transition_approval.meta,
               transition_approval.object_id,
               transition_approval.permissions,
               transition_approval.groups,
@@ -375,7 +376,7 @@ export default {
     },
     on_transition_hook_created(created_hook) {
       if (this.selected_transition && !this.selected_transition.hooks.find(hook => hook.id == created_hook.id)) {
-        http.post("/transition-hook/", created_hook.to_create_request(), response => {
+        http.post("/transition-hook/create/", created_hook.to_create_request(), response => {
           created_hook.id = response.data.id;
           this.selected_transition.hooks.push(created_hook);
           this._update_transition(this.selected_transition);
@@ -390,7 +391,7 @@ export default {
     },
     delete_transition_hook() {
       if (this.selected_transition) {
-        http.delete(`/transition-hook/${this.deletingTransitionHook.id}`, response => {
+        http.delete(`/transition-hook/delete/${this.deletingTransitionHook.id}/`, response => {
           this.selected_transition.hooks = this.selected_transition.hooks.filter(hook => hook.id != this.deletingTransitionHook.id);
           this._update_transition(this.selected_transition);
           this.deletingTransitionHook = null;
@@ -404,7 +405,7 @@ export default {
       if (this.selected_transition) {
         var approval = this.selected_transition.approvals.find(approval => approval.id == created_hook.transition_approval_id);
         if (approval && !approval.hooks.find(hook => hook.id == created_hook.id)) {
-          http.post("/approval-hook/", created_hook.to_create_request(), response => {
+          http.post("/approval-hook/create/", created_hook.to_create_request(), response => {
             created_hook.id = response.data.id;
             approval.hooks.push(created_hook);
             this._update_approval(this.selected_transition, approval);
@@ -414,7 +415,7 @@ export default {
         }
       }
     },
-    on_approval_hook_deleted(approval, deleted_hook) {
+    on_approval_hook_deleted(deleted_hook) {
       this.deletingApprovalHook = deleted_hook;
       this.deletingApprovalHookDialog = true;
     },
@@ -422,7 +423,7 @@ export default {
       if (this.selected_transition) {
         var approval = this.selected_transition.approvals.find(approval => approval.id == this.deletingApprovalHook.transition_approval_id);
         if (approval) {
-          http.delete(`/approval-hook/${this.deletingApprovalHook.id}`, response => {
+          http.delete(`/approval-hook/delete/${this.deletingApprovalHook.id}`, response => {
             approval.hooks = approval.hooks.filter(hook => hook.id != this.deletingApprovalHook.id);
             this._update_approval(this.selected_transition, approval);
             this._update_transition(this.selected_transition);

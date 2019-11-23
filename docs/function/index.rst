@@ -1,7 +1,7 @@
 .. _function_guide:
 
-Function Guide
-==============
+Functions
+=========
 
 ``django-river`` after version ``3.0.0`` started to support
 on the fly functions and the hooks on certain events in a workflow.

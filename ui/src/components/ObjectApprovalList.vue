@@ -7,13 +7,12 @@
       <v-col>
         <div v-for="(element) in items" :key="element.priority">
           <ObjectApprovalDetail
-            :editable="editable"
             :workflow="workflow"
             :object_id="object_id"
-            :transition_approval_meta_id="element.transition_approval_meta_id"
             :approval="element"
-            @on-hook-create="(hook)=>on_hook_created(element,hook)"
-            @on-hook-delete="(hook)=>on_hook_deleted(element,hook)"
+            :editable="editable"
+            @on-hook-create="(hook)=>on_hook_created(hook)"
+            @on-hook-delete="(hook)=>on_hook_deleted(hook)"
           />
         </div>
       </v-col>

@@ -185,7 +185,7 @@ class TransitionDto(serializers.ModelSerializer):
 
     class Meta:
         model = Transition
-        fields = ['id', 'workflow', 'source_state', 'destination_state', 'iteration', 'object_id', 'is_done', 'is_cancelled']
+        fields = ['id', 'workflow', 'source_state', 'destination_state', 'iteration', 'meta', 'object_id', 'is_done', 'is_cancelled']
 
     def get_is_done(self, obj):
         return obj.status == DONE
@@ -201,7 +201,7 @@ class TransitionApprovalDto(serializers.ModelSerializer):
 
     class Meta:
         model = TransitionApproval
-        fields = ['id', 'workflow', 'transition', 'permissions', 'groups', 'priority', 'status', 'transactioner', 'object_id']
+        fields = ['id', 'workflow', 'transition', 'permissions', 'groups', 'priority', 'status', 'transactioner', 'meta', 'object_id']
 
 
 # WORKFLOW OBJECT

@@ -76,6 +76,7 @@ Contents
    workflow/index
    function/index
    custom_admin
+   workflow_object/index
 
 
 Indices and tables

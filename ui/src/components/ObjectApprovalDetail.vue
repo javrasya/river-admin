@@ -98,9 +98,9 @@
     <v-dialog v-model="newHookDialog" max-width="800">
       <CreateApprovalHookForm
         :workflow="workflow"
-        :transition_approval_meta_id="transition_approval_meta_id"
-        :object_id="object_id"
+        :transition_approval_meta_id="approval.transition_approval_meta"
         :transition_approval_id="approval.id"
+        :object_id="object_id"
         :excluded_function_ids="approval.hooks.map(hook => hook.callback_function.id)"
         @on-create="on_hook_created"
       />
@@ -119,7 +119,7 @@ export default {
     HookDetail,
     CreateApprovalHookForm
   },
-  props: ["workflow", "transition_approval_meta_id", "object_id", "approval", "editable"],
+  props: ["workflow", "approval", "object_id", "editable"],
   data: () => ({
     fab: false,
     newHookDialog: false
