@@ -1,7 +1,7 @@
 from django.conf.urls import url
 from django.db.models import ProtectedError
 from rest_framework import serializers
-from rest_framework.authentication import SessionAuthentication, TokenAuthentication, BasicAuthentication
+from rest_framework.authentication import TokenAuthentication
 from rest_framework.decorators import api_view, authentication_classes, renderer_classes
 from rest_framework.renderers import TemplateHTMLRenderer, JSONRenderer
 from rest_framework.views import exception_handler as drf_exception_handler
@@ -97,6 +97,6 @@ from .transition_approval_view import *
 from .workflow_object_view import *
 
 
-@get(r'^river-admin/', authentication_classes=[], renderer_classes=[TemplateHTMLRenderer])
+@get(r'^river-admin/$', authentication_classes=[], renderer_classes=[TemplateHTMLRenderer])
 def index(request):
     return Response({}, template_name="index.html")

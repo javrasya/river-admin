@@ -10,8 +10,11 @@ Getting Started
 Installation
 ------------
 .. note::
-    Before you can set up your workflow, your app integration with ``django-river`` must be done. Don't worry it is with the easiest setup.  
-    To see how to do it with ``django-river`` pleas have a look at `django-river`
+    Before you can set up your workflow, your app
+    integration with ``django-river`` must be done.
+    Don't worry it is with the easiest setup.To see
+    how to do it with ``django-river`` pleas have a
+    look at `django-river`
 
 .. _django-river: https://github.com/javrasya/django-river/
 
@@ -31,20 +34,28 @@ Installation
            ...
        ]
 
-2. (For production) collect static;
+2. Register ``River Admin`` urls in your app ``urls.py``
+
+   .. code:: python
+
+        urlpatterns = [
+            url(r'^', include("river_admin.urls")),
+        ]
+
+3. (For production) collect static;
 
    .. code:: bash
 
        python manage.py collectstatic
 
-3. Run your application;
+4. Run your application;
 
    .. code:: bash
 
        python manage.py runserver 0.0.0.0:8000
 
 
-4. Open it up on the browser and login with an admin user and enjoy the best way of flowing your work ever :-)
+5. Open it up on the browser and login with an admin user and enjoy the best way of flowing your work ever :-)
 
    .. code:: bash
 
@@ -54,12 +65,15 @@ Installation
 Out of the Box Examples
 -----------------------
 
-``River Admin`` comes with few examples that you can fiddle with and find your way easier.
+``River Admin`` comes with few examples that you can
+fiddle with and find your way easier.
 
 
 .. note::
-    Enabling them will create their tables and also the necessary workflow components in the DB for you. 
-    It might be good idea to try them out on a development database.
+    Enabling them will create their tables and
+    also the necessary workflow components in
+    the DB for you. It might be good idea to try
+    them out on a development database.
 
 Shipping Flow
 ^^^^^^^^^^^^^
