@@ -75,6 +75,7 @@ Contents
    authentication
    workflow/index
    function/index
+   custom_admin
 
 
 Indices and tables

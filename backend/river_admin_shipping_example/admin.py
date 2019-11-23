@@ -1,11 +1,10 @@
 from django.contrib import admin
 
 import river_admin
-from river_admin.site import RiverAdmin
 from river_admin_shipping_example.models import Shipping
 
 
-class ShippingRiverAdmin(RiverAdmin):
+class ShippingRiverAdmin(river_admin.RiverAdmin):
     name = "Shipping Flow"
     icon = "mdi-truck"
     list_displays = ['pk', 'product', 'customer', 'shipping_status']

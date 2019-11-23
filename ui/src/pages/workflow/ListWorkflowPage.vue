@@ -49,18 +49,18 @@
                         <v-icon color="primary" x-large>{{ item.admin_icon}}</v-icon>
                       </v-row>
                       <v-row class="mt-5 mb-10" align="center" justify="center">
-                        <h5>{{item.admin_name}}</h5>
+                        <H5Max v-model="item.admin_name" max="16" />
                       </v-row>
                     </v-col>
                     <v-col v-else>
                       <v-row class="mt-5 mb-10" align="center" justify="center">
-                        <h5>{{item.content_type.app_label}}</h5>
+                        <H5Max v-model="item.content_type.app_label" max="16" />
                       </v-row>
                       <v-row class="mb-10" align="center" justify="center">
-                        <h5>{{item.content_type.model}}</h5>
+                        <H5Max v-model="item.content_type.model" max="16" />
                       </v-row>
                       <v-row align="center" justify="center">
-                        <h5>{{item.field_name}}</h5>
+                        <H5Max v-model="item.field_name" max="16" />
                       </v-row>
                     </v-col>
                   </v-row>
@@ -156,6 +156,7 @@
 <script>
 import http from "../../helpers/http";
 import EmptyState from "../../components/EmptyState";
+import H5Max from "../../components/H5Max";
 import { emit_success } from "../../helpers/event_bus";
 import { auth, WORKFLOW } from "../../helpers/auth";
 import { Workflow } from "../../models/models";
@@ -163,7 +164,8 @@ import { Workflow } from "../../models/models";
 export default {
   name: "ListWorkflowPage",
   components: {
-    EmptyState
+    EmptyState,
+    H5Max
   },
   computed: {
     deletingWorkflowDialogTitle() {

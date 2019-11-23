@@ -18,7 +18,8 @@ def get_it(request, pk):
 
 @get(r'^workflow/list/$')
 def list_it(request):
-    return Response(WorkflowDto(Workflow.objects.all(), many=True).data, status=HTTP_200_OK)
+    valid_workflows = [workflow for workflow in Workflow.objects.all() if workflow.content_type.model_class()]
+    return Response(WorkflowDto(valid_workflows, many=True).data, status=HTTP_200_OK)
 
 
 @post(r'^workflow/create/$')
@@ -100,9 +101,11 @@ def get_workflow_metadata(request):
     workflows = []
     for workflow in Workflow.objects.all():
         model_class = workflow.content_type.model_class()
-        registered_admin = river_admin.site.get(model_class, workflow.field_name)
-        workflow_name = registered_admin.name or model_class.__class__.__name__ if registered_admin else model_class.__class__.__name__
-        workflow_icon = registered_admin.icon or "mdi-sitemap" if registered_admin else "mdi-sitemap"
-        workflows.append({"id": workflow.id, "name": workflow_name, "icon": workflow_icon})
+        if model_class:
+            registered_admin = river_admin.site.get(model_class, workflow.field_name)
+            default_name = "%s (%s)" % (model_class.__name__, workflow.field_name)
+            workflow_name = registered_admin.name or default_name if registered_admin else default_name
+            workflow_icon = registered_admin.icon or "mdi-sitemap" if registered_admin else "mdi-sitemap"
+            workflows.append({"id": workflow.id, "name": workflow_name, "icon": workflow_icon})
 
     return Response(WorkflowMetadataDto(workflows, many=True).data, status=HTTP_200_OK)

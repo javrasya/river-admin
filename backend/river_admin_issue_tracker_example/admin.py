@@ -1,11 +1,10 @@
 from django.contrib import admin
 
 import river_admin
-from river_admin.site import RiverAdmin
 from river_admin_issue_tracker_example.models import Issue
 
 
-class IssueRiverAdmin(RiverAdmin):
+class IssueRiverAdmin(river_admin.RiverAdmin):
     name = "Issue Tracking Flow"
     icon = "mdi-ticket-account"
     list_displays = ['pk', 'title', 'reporter', 'assignee', 'issue_status']
