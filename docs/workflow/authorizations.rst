@@ -1,4 +1,4 @@
-.. _manage-authorizations:
+.. _authorizations:
 
 .. |Edit Workflow Rules From Home| image:: /_static/images/go-to-workflow-authorization.png
     :width: 50%
@@ -21,12 +21,22 @@
 .. |Create Approval With Multiple Group| image:: /_static/images/create-authorization-rule-with-multiple-groups.png
     :width: 80%
 
+.. |Delete Authorization Rule| image:: /_static/images/delete-authorization-rule.png
+    :width: 80%
+
 .. |Approval With Multiple Group Created| image:: /_static/images/authorization-rule-with-multiple-groups.png
 
 .. |Chain of Authorization Rule| image:: /_static/images/chain-of-authorization-rule.png
 
-Manage Authorizations
-=====================
+.. |Start Reprioritization| image:: /_static/images/repritoritization-1.png
+    :width: 80%
+
+.. |Reprioritizating| image:: /_static/images/repritoritization-2.png
+    :width: 80%
+
+
+Authorizations
+==============
 
 Thanks to ``django-river`` because it supports flexibility to manage
 workflow components on the fly meaning that the changes can be applied
@@ -106,9 +116,17 @@ transition;
 
 |Approval With Multiple Group Created|
 
+Delete Authorization Rule
+-------------------------
+
+.. rst-class:: center
+
+|Delete Authorization Rule|
+
+
 
 Chain of Authorization Rules
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------
 
 This is one of the cool feature of ``django-river`` already.
 Multiple authorization rules can be chained togeter with a
@@ -129,4 +147,17 @@ group should first approve it before it is on the user's approval who
 are in the ``Delivery Manager`` group.
 
 
+.. note::
+    The prioritization order matters here.
 
+Reprioritizition
+~~~~~~~~~~~~~~~~
+
+One of the most convinient improvement with ``River Admin`` on top of
+``django-river`` is changing the order of the chain by just a drag
+and drop.
+
+.. rst-class:: center
+
+|Start Reprioritization|
+|Reprioritizating|

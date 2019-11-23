@@ -283,7 +283,8 @@ export default {
 
     on_approval_created(created_approval) {
       if (this.selected_transition) {
-        created_approval.priority = this.selected_transition.approvals.length + 1;
+        var max_priority = this.selected_transition.approvals.reduce((max, approval) => Math.max(max, approval.priority), 0);
+        created_approval.priority = max_priority + 1;
         http.post("/transition-approval-meta/create/", created_approval.to_create_request(), response => {
           created_approval.id = response.data.id;
           this.selected_transition.approvals.push(created_approval);
@@ -372,7 +373,7 @@ export default {
       return this.states.find(state => state.id == id);
     },
     _update_transition(transition) {
-      this._repriotise_approvals(transition);
+      // this._repriotise_approvals(transition);
       this.transitions = this.transitions.map(t => (t.id == transition.id ? transition : t));
     },
     _update_approval(transition, approval) {

@@ -8,4 +8,4 @@ Workflow Guide
 
     create_workflow
     list_workflow
-    manage_authorizations
+    authorizations
