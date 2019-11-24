@@ -1,0 +1,13 @@
+[run]
+omit =
+    river_admin_issue_tracker_example/*
+    river_admin_shipping_example/*
+    river_admin/tests/*
+    river_admin/migrations/*
+    river_admin/urls.py
+    */__init__*
+    .tox/*
+    setup.py
+    test_settings.py
+    test_urls.py
+    manage.py
