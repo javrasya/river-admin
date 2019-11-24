@@ -173,13 +173,13 @@ Enable the example app and then run your application
 Contribute
 ==========
 
-In order to contribute, fork the repository, follow every instruction
-before you push stated in DEVELOPMENT_, commit your changes and send
-a pull request.
+In order to contribute, fork the repository, look at every instructions
+in CONTRIBUTE_ before you work then commit your changes and send a pull
+request.
 
 Make sure you add yourself to CONTRIBUTORS_.
 
-.. _DEVELOPMENT: https://github.com/javrasya/river-admin/blob/master/DEVELOPMENT.rst
+.. _CONTRIBUTE: https://github.com/javrasya/river-admin/blob/master/docs/contribute.rst
 .. _CONTRIBUTORS: https://github.com/javrasya/river-admin/blob/master/CONTRIBUTORS
 
 .. _license:

@@ -92,6 +92,7 @@ Contents
    function/index
    custom_admin
    workflow_object/index
+   contribute
 
 
 Indices and tables

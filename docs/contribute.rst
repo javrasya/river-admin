@@ -1,12 +1,14 @@
-River Admin Development
-=======================
+.. _`Contribute`:
+
+Contribute
+==========
 
 ``River Admin`` consists of two parts that are backend and ui.
 It is built with `Django Rest Framework`_ on the backend
 side whereas Vue_ on the front end side.
 
-River Admin Backend
--------------------
+Rive Admin Backend
+------------------
 ``River Admin`` backend side is built with ``Django``
 and `Django Rest Framework`_. So you need ``Django``
 development environment to be set up.
@@ -53,7 +55,6 @@ To run it for a specific environment;
    .. code:: bash
 
        tox -e py34-dj2.1
-s
 
 River Admin UI
 --------------
