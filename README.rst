@@ -10,7 +10,7 @@
 River Admin
 ===========
 
-``River Admin`` is a very modern and shiny web application functioning
+\:rocket\: \:rocket\: \:rocket\: ``River Admin`` is a very modern and a shiny web application functioning
 like an admin interface that provides administration for django-river_ .
 It basically extends the ``django-river`` flexibility with some user
 friendly and very easy to use admin interfaces.
@@ -55,12 +55,12 @@ Requirements
 
 Installation
 ------------
-.. note::
-    Before you can set up your workflow, your app
-    integration with ``django-river`` must be done.
-    Don't worry it is with the easiest setup.To see
-    how to do it with ``django-river`` pleas have a
-    look at `django-river`
+
+**Note:** Before you can set up your workflow, your app
+integration with ``django-river`` must be done.
+Don't worry it is with the easiest setup.To see
+how to do it with ``django-river`` pleas have a
+look at `django-river`
 
 1. Install and enable it
 
@@ -113,11 +113,11 @@ Out of the Box Examples
 fiddle with and find your way easier.
 
 
-.. note::
-    Enabling them will create their tables and
-    also the necessary workflow components in
-    the DB for you. It might be good idea to try
-    them out on a development database.
+
+**Note:** Enabling them will create their tables and
+also the necessary workflow components in
+the DB for you. It might be good idea to try
+them out on a development database.
 
 Shipping Flow
 ^^^^^^^^^^^^^
@@ -165,13 +165,15 @@ a pull request.
 Make sure you add yourself to CONTRIBUTORS_.
 
 .. _DEVELOPMENT: https://github.com/javrasya/river-admin/blob/master/DEVELOPMENT.md
-.. _CONTRIBUTORS: https://github.com/mher/river-admin/blob/master/CONTRIBUTORS
+.. _CONTRIBUTORS: https://github.com/javrasya/river-admin/blob/master/CONTRIBUTORS
 
 .. _license:
 
 License
 =======
 
-This software is licensed under the `New BSD License`. See the ``LICENSE``
-file in the top distribution directory for the full license text.
+This software is licensed under the `New BSD License`.
+See the `LICENSE FILE`_ file in the top distribution directory
+for the full license text.
 
+.. _`LICENSE FILE`: https://github.com/javrasya/river-admin/blob/master/LICENSE
