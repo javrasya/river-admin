@@ -1,12 +1,12 @@
 ---
 exclude_paths:
-  - 'docs/*'
+  - 'docs/**'
   - 'river_admin/migrations/*'
-  - 'river_admin/templates/*'
-  - 'river_admin/static/*'
-  - 'river_admin_shipping_example/*'
-  - 'river_admin_issue_tracker_example/*'
-  - 'test_settings'
+  - 'river_admin/templates/**'
+  - 'river_admin/static/**'
+  - 'river_admin_shipping_example/**'
+  - 'river_admin_issue_tracker_example/**'
+  - 'test_settings.py'
   - 'manage.py'
   - 'test_urls.py'
   - 'setup.py'
