@@ -13,3 +13,5 @@ of one with new hooks.
     :maxdepth: 2
 
     list_workflow_objects
+    timeline
+    object_hooks

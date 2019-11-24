@@ -1,4 +1,4 @@
-.. _hooks:
+.. _Hooks:
 
 .. |Create Transition Hook - Step 1| image:: /_static/images/create-transition-hook-1.png
     :width: 80%

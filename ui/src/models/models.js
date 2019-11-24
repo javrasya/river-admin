@@ -227,6 +227,7 @@ export class ObjectApproval {
         this.hooks = []
         this.status = status
         this.transactioner = transactioner
+        this.is_approved = this.status == "approved"
     }
 
     static of(id, workflow, transition_meta, transition_approval_meta, object_id, permissions, groups, priority, status, transactioner) {

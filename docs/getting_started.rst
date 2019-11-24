@@ -42,7 +42,7 @@ Installation
             url(r'^', include("river_admin.urls")),
         ]
 
-3. (For production) collect static;
+3. Collect statics **(For production)**;
 
    .. code:: bash
 

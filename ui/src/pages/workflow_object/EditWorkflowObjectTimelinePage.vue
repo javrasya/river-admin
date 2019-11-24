@@ -305,7 +305,7 @@ export default {
               transition.approvals = transition_approvals;
             });
 
-            var transition_hooks_fetcher = that.get_transition_hooks(transition.id).then(transition_hooks => {
+            var transition_hooks_fetcher = that.get_transition_hooks(transition).then(transition_hooks => {
               transition.hooks = transition_hooks;
             });
 
@@ -315,8 +315,8 @@ export default {
       });
     },
 
-    get_transition_hooks(transition_id) {
-      return http.get(`/transition/transition-hook/list/${transition_id}/`, response => {
+    get_transition_hooks(transition) {
+      return http.get(`/transition/transition-hook/list/${transition.id}/`, response => {
         return response.data.map(transition_hook =>
           TransitionHook.of(
             transition_hook.id,
@@ -325,7 +325,7 @@ export default {
             transition_hook.transition_meta,
             transition_hook.transition,
             transition_hook.object_id,
-            false
+            transition.is_done
           )
         );
       });
@@ -350,7 +350,7 @@ export default {
             );
 
             return that
-              .get_transition_approval_hooks(approval.id)
+              .get_transition_approval_hooks(approval)
               .then(transition_approval_hooks => {
                 approval.hooks = transition_approval_hooks;
               })
@@ -359,8 +359,8 @@ export default {
         );
       });
     },
-    get_transition_approval_hooks(transition_approval_id) {
-      return http.get(`/transition-approval/approval-hook/list/${transition_approval_id}/`, response => {
+    get_transition_approval_hooks(transition_approval) {
+      return http.get(`/transition-approval/approval-hook/list/${transition_approval.id}/`, response => {
         return response.data.map(transition_approval_hook =>
           ApprovalHook.of(
             transition_approval_hook.id,
@@ -369,7 +369,7 @@ export default {
             transition_approval_hook.transition_approval_meta,
             transition_approval_hook.transition_approval,
             transition_approval_hook.object_id,
-            false
+            transition_approval.is_approved
           )
         );
       });

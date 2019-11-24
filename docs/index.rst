@@ -6,6 +6,8 @@
 
 .. |Workflow Edit Img| image:: /_static/images/workflow-edit.png
 
+.. |Custom Admin| image:: /_static/images/custom-admin.png
+
 
 
 River Admin
@@ -16,20 +18,24 @@ like an admin interface that provides administration for django-river_ .
 It basically extends the ``django-river`` flexibility with some user
 friendly and very easy to use admin interfaces.
 
-It can either be deployed as a standalone application on top or bundled in your application
-since it is yet another library you can install via package manager.
+It can either be deployed as a standalone application on top
+or bundled in your application since it is yet another library
+you can install via package manager.
 
 The power of it comes from the libraries it uses on both backend and
 frontend sides which are ``django-river``, ``django-rest-framework``
 ``Vue``, ``Vuetify``
 
 .. rst-class:: image-slide
+
 |Home Img|
 |Workflow Edit Img|
 |Re-prio Img|
 |Timeline Img|
+|Custom Admin|
 
-Each will be documented in detail but here what you can briefly have with ``River Admin`` are that;
+Each will be documented in detail but here what you
+can briefly have with ``River Admin`` are that;
 
 * List your workflows
 * Customize your workflow apperance like the icon, the name and list displays in the same way as Django admin
@@ -43,7 +49,6 @@ Each will be documented in detail but here what you can briefly have with ``Rive
 * See a specific workflow object timeline to what has happened and what will possibly happen
 * Have your hooks run for a specific workflow object instead of running them for every object in the workflow.
 * Your django authorizations will still be ruling here.
-
 
 .. _django-river: https://github.com/javrasya/django-river/
 
@@ -63,7 +68,8 @@ please consider becoming our `sponsor`_  , `patron`_ or donate over `PayPal`_
 Getting Started
 ===============
 
-You can easily get started with ``django-river`` by following :ref:`getting-started`.
+You can easily get started with ``django-river`` by
+following :ref:`getting-started`.
 
 Contents
 ========
