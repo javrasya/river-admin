@@ -1,6 +1,10 @@
 .. |Build Status| image:: https://travis-ci.org/javrasya/river-admin.svg?branch=master
     :target: https://travis-ci.org/javrasya/river-admin
 
+.. |Doc Status| image:: https://readthedocs.org/projects/river-admin/badge/?version=latest
+    :target: https://river-admin.readthedocs.io/en/latest/?badge=latest
+    :alt: Documentation Status
+
 .. |Coverage Status| image:: https://coveralls.io/repos/github/javrasya/river-admin/badge.svg?branch=master
     :target: https://coveralls.io/github/javrasya/river-admin?branch=master
 
@@ -22,7 +26,9 @@
 River Admin
 ===========
 
-|Build Status| |Coverage Status| |Code Quality|
+.. rst-class:: center
+
+|Build Status| |Doc Status| |Coverage Status| |Code Quality|
 
 ``River Admin`` is a very modern and shiny web application functioning
 like an admin interface that provides administration for django-river_ .
