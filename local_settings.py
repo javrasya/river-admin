@@ -86,7 +86,7 @@ SITE_ID = 1
 
 SECRET_KEY = 'abcde12345'
 
-ROOT_URLCONF = 'test_urls'
+ROOT_URLCONF = 'local_urls'
 
 LOGGING = {
     'version': 1,

@@ -4,8 +4,8 @@ from rest_framework.response import Response
 from rest_framework.status import HTTP_200_OK
 from river.models import Transition
 
-from river_admin.views import get, TransitionApprovalDto
-from river_admin.views.serializers import TransitionDto, TransitionHookDto
+from river_admin.views import get
+from river_admin.views.serializers import TransitionDto, TransitionHookDto, TransitionApprovalDto
 
 
 @get(r'^transition/get/(?P<pk>\w+)/$')
