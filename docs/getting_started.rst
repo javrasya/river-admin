@@ -7,6 +7,18 @@
 Getting Started
 ===============
 
+Requirements
+------------
+
+* `django-river`_ >= 3.0.0
+* Any ``Python`` version that is supported by `django-river`_
+* Any ``Django`` version that is supported by `django-river`_
+* Any browser that is supported by `Vuetify`_ (`Browser Support`_)
+
+.. _`Browser Support`: https://vuetifyjs.com/en/getting-started/browser-support#browser-support
+.. _`Vuetify`: https://vuetifyjs.com/en/
+.. _`django-river`: https://github.com/javrasya/django-river
+
 Installation
 ------------
 .. note::
@@ -15,8 +27,6 @@ Installation
     Don't worry it is with the easiest setup.To see
     how to do it with ``django-river`` pleas have a
     look at `django-river`
-
-.. _django-river: https://github.com/javrasya/django-river/
 
 1. Install and enable it
 
