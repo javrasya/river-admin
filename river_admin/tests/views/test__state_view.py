@@ -1,5 +1,5 @@
 from django.test import TestCase
-from hamcrest import equal_to, assert_that, has_entry, has_length, has_item, all_of, not_none, contains, is_, none
+from hamcrest import equal_to, assert_that, has_entry, has_length, has_item, all_of, not_none, is_, none
 from rest_framework.status import HTTP_404_NOT_FOUND, HTTP_400_BAD_REQUEST, HTTP_200_OK
 from river.models import State
 
