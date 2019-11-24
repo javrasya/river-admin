@@ -164,7 +164,7 @@ a pull request.
 
 Make sure you add yourself to CONTRIBUTORS_.
 
-.. _DEVELOPMENT: https://github.com/javrasya/river-admin/blob/master/DEVELOPMENT.md
+.. _DEVELOPMENT: https://github.com/javrasya/river-admin/blob/master/DEVELOPMENT.rst
 .. _CONTRIBUTORS: https://github.com/javrasya/river-admin/blob/master/CONTRIBUTORS
 
 .. _license:
