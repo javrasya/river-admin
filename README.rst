@@ -5,6 +5,10 @@
     :target: https://river-admin.readthedocs.io/en/latest/?badge=latest
     :alt: Documentation Status
 
+.. |Licence| image:: https://img.shields.io/github/license/javrasya/river-admin
+    :alt: GitHub license
+    :target: https://github.com/javrasya/river-admin/blob/master/LICENSE
+
 .. |Coverage Status| image:: https://coveralls.io/repos/github/javrasya/river-admin/badge.svg?branch=master
     :target: https://coveralls.io/github/javrasya/river-admin?branch=master
 
@@ -23,7 +27,7 @@
 River Admin
 ===========
 
-|Build Status| |Doc Status| |Coverage Status| |Code Quality|
+|Build Status| |Doc Status| |Licence| |Coverage Status| |Code Quality|
 
 \:rocket\: \:rocket\: \:rocket\: ``River Admin`` is a very modern and
 a shiny web application functioning like an admin interface that provides
