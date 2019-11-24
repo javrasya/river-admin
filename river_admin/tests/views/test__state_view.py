@@ -6,7 +6,7 @@ from river.models import State
 from river_admin.views import DUPLICATE_ITEM
 
 
-class StateView(TestCase):
+class StateViewTest(TestCase):
 
     def test__shouldReturnNotFoundWhenAnInexistentStateIsRequested(self):
         response = self.client.get('/state/get/1/')
