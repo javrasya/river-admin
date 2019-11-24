@@ -1,4 +1,4 @@
-# django-river-admin-ui
+# river-admin-ui
 
 ## Run Tests
 

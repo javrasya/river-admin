@@ -32,7 +32,7 @@ Installation
 
    .. code:: bash
 
-       pip install django-river-admin
+       pip install river-admin
 
 
    .. code:: python

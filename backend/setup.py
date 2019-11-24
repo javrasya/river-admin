@@ -14,7 +14,7 @@ except IOError as err:
     sys.exit(1)
 
 setup(
-    name='django-river-admin',
+    name='river-admin',
     version='0.1.0',
     author='Ahmet DAL',
     author_email='ceahmetdal@gmail.com',

@@ -10,8 +10,6 @@
 River Admin
 ===========
 
-|Logo|
-
 ``River Admin`` is a very modern and shiny web application functioning
 like an admin interface that provides administration for django-river_ .
 It basically extends the ``django-river`` flexibility with some user
@@ -68,7 +66,7 @@ Installation
 
    .. code:: bash
 
-       pip install django-river-admin
+       pip install river-admin
 
 
    .. code:: python
@@ -164,7 +162,7 @@ In order to contribute, fork the repository, follow every instruction
 before you push stated in DEVELOPMENT_, commit your changes and send
 a pull request.
 
-Make sure you add yourself to CONTRIBUTORS.
+Make sure you add yourself to CONTRIBUTORS_.
 
 .. _DEVELOPMENT: https://github.com/javrasya/river-admin/blob/master/DEVELOPMENT.md
 .. _CONTRIBUTORS: https://github.com/mher/river-admin/blob/master/CONTRIBUTORS
