@@ -1,5 +1,6 @@
 ---
 exclude_paths:
+  - 'docs/*'
   - 'river_admin/migrations/*'
   - 'river_admin/templates/*'
   - 'river_admin/static/*'
