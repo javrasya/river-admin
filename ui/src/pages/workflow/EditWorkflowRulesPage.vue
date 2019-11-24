@@ -149,15 +149,15 @@
 </template>
 
 <script>
-import EmptyState from "../../components/EmptyState";
-import CreateApprovalForm from "../../components/CreateApprovalForm";
-import CreateTransitionHookForm from "../../components/CreateTransitionHookForm";
-import HookDetail from "../../components/HookDetail";
-import WorkflowIllustration from "../../components/WorkflowIllustration";
-import ApprovalList from "../../components/ApprovalList";
-import { emit_success } from "../../helpers/event_bus";
-import http from "../../helpers/http";
-import { Workflow, Approval, Transition, State, TransitionHook, ApprovalHook } from "../../models/models";
+import EmptyState from "@/components/EmptyState.vue";
+import CreateApprovalForm from "@/components/CreateApprovalForm.vue";
+import CreateTransitionHookForm from "@/components/CreateTransitionHookForm.vue";
+import HookDetail from "@/components/HookDetail.vue";
+import WorkflowIllustration from "@/components/WorkflowIllustration.vue";
+import ApprovalList from "@/components/ApprovalList.vue";
+import { emit_success } from "@/helpers/event_bus";
+import http from "@/helpers/http";
+import { Workflow, Approval, Transition, State, TransitionHook, ApprovalHook } from "@/models/models";
 
 export default {
   name: "EditWorkflowRulesPage",

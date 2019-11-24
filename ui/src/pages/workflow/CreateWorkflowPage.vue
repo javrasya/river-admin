@@ -30,12 +30,12 @@
 </template>
 
 <script>
-import WorkflowInput from "../../components/WorkflowInput";
-import StateInput from "../../components/StateInput";
-import EmptyState from "../../components/EmptyState";
-import { Workflow } from "../../models/models";
-import { emit_success } from "../../helpers/event_bus";
-import http from "../../helpers/http";
+import WorkflowInput from "@/components/WorkflowInput.vue";
+import StateInput from "@/components/StateInput.vue";
+import EmptyState from "@/components/EmptyState.vue";
+import { Workflow } from "@/models/models";
+import { emit_success } from "@/helpers/event_bus";
+import http from "@/helpers/http";
 
 export default {
   name: "CreateWorkflowPage",

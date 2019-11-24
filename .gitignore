@@ -1,1 +1,40 @@
+*.pyc
+**node_modules
+**bower_components
+.tmp
+coverage
+.idea
+.tox*
+junit-*.xml
+*.log
+*egg-info*
+*sqlite3*
+.coverage
+docs/_*
+dist
+.DS_Store
+.cache
+.pytest_cache
+.python-version
+build
 doc_build
+.DS_Store
+node_modules
+/dist
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

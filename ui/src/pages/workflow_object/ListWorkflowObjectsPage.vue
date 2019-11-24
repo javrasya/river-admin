@@ -71,16 +71,14 @@
   </v-container>
 </template>
 
-
-
 <script>
-import EmptyState from "../../components/EmptyState";
-import WorkflowIllustration from "../../components/WorkflowIllustration";
+import EmptyState from "@/components/EmptyState.vue";
+import WorkflowIllustration from "@/components/WorkflowIllustration.vue";
 
-import { Workflow } from "../../models/models";
-import { emit_success } from "../../helpers/event_bus";
-import { auth, WORKFLOW } from "../../helpers/auth";
-import http from "../../helpers/http";
+import { Workflow } from "@/models/models";
+import { emit_success } from "@/helpers/event_bus";
+import { auth, WORKFLOW } from "@/helpers/auth";
+import http from "@/helpers/http";
 
 export default {
   name: "ListWorkflowObjectsPage",

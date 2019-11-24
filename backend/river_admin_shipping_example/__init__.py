@@ -1,1 +1,0 @@
-default_app_config = 'river_admin_shipping_example.apps.RiverAdminShippingExampleApp'

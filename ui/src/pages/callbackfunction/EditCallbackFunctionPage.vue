@@ -40,9 +40,9 @@
 </template>
 
 <script>
-import CodeEditor from "../../components/CodeEditor";
-import { emit_success } from "../../helpers/event_bus";
-import http from "../../helpers/http";
+import CodeEditor from "@/components/CodeEditor.vue";
+import { emit_success } from "@/helpers/event_bus";
+import http from "@/helpers/http";
 
 export default {
   name: "CreateCallbackFunctionPage",

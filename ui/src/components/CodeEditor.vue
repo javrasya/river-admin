@@ -4,7 +4,7 @@
 
 <script>
 import { codemirror } from "vue-codemirror";
-import initializePythonHints from "../helpers/python-hint";
+import initializePythonHints from "@/helpers/python-hint";
 
 // require styles
 import "codemirror/lib/codemirror.css";

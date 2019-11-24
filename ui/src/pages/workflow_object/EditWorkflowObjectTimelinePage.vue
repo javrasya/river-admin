@@ -156,13 +156,13 @@
 </template>
 
 <script>
-import EmptyState from "../../components/EmptyState";
-import CreateTransitionHookForm from "../../components/CreateTransitionHookForm";
-import HookDetail from "../../components/HookDetail";
-import WorkflowIllustration from "../../components/WorkflowIllustration";
-import ObjectApprovalList from "../../components/ObjectApprovalList";
-import { emit_success } from "../../helpers/event_bus";
-import http from "../../helpers/http";
+import EmptyState from "@/components/EmptyState.vue";
+import CreateTransitionHookForm from "@/components/CreateTransitionHookForm.vue";
+import HookDetail from "@/components/HookDetail.vue";
+import WorkflowIllustration from "@/components/WorkflowIllustration.vue";
+import ObjectApprovalList from "@/components/ObjectApprovalList.vue";
+import { emit_success } from "@/helpers/event_bus";
+import http from "@/helpers/http";
 import { Workflow, State, ObjectTransition, ObjectApproval, TransitionHook, ApprovalHook } from "../../models/models";
 
 export default {

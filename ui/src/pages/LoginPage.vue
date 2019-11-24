@@ -40,8 +40,8 @@
 </template>
 
 <script>
-import { auth, WORKFLOW } from "../helpers/auth";
-import { emit_error } from "../helpers/event_bus";
+import { auth, WORKFLOW } from "@/helpers/auth";
+import { emit_error } from "@/helpers/event_bus";
 import axios from "axios";
 export default {
   props: {

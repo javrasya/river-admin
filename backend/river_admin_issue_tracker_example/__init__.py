@@ -1,1 +1,0 @@
-default_app_config = 'river_admin_issue_tracker_example.apps.RiverAdminIssueTrackerExampleApp'

@@ -25,10 +25,10 @@
 </template>
 
 <script>
-import NotLoggedInLayout from "./layouts/NotLoggedInLayout";
-import LoggedInLayout from "./layouts/LoggedInLayout";
-import { on_logout, on_error, on_success } from "./helpers/event_bus";
-import { CAN_NOT_DELETE_DUE_TO_PROTECTION } from "./helpers/errors";
+import NotLoggedInLayout from "@/layouts/NotLoggedInLayout.vue";
+import LoggedInLayout from "@/layouts/LoggedInLayout.vue";
+import { on_logout, on_error, on_success } from "@/helpers/event_bus";
+import { CAN_NOT_DELETE_DUE_TO_PROTECTION } from "@/helpers/errors";
 
 const defaultLayout = "LoggedInLayout";
 

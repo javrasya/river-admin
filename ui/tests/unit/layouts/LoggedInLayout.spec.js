@@ -1,9 +1,8 @@
 
 import Vuetify from 'vuetify'
 import Vue from 'vue'
-import { auth, WORKFLOW, STATE, VIEW, FUNCTION } from "../../../src/helpers/auth"
-
-import http from "../../../src/helpers/http"
+import { auth, WORKFLOW, STATE, VIEW, FUNCTION } from "@/helpers/auth"
+import http from "@/helpers/http"
 import { shallowMount } from '@vue/test-utils'
 import LoggedInLayout from '@/layouts/LoggedInLayout.vue'
 

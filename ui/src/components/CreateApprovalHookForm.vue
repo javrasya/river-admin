@@ -58,8 +58,8 @@
 </template>
 
 <script>
-import { Function, ApprovalHook } from "../models/models";
-import http from "../helpers/http";
+import { Function, ApprovalHook } from "@/models/models";
+import http from "@/helpers/http";
 
 export default {
   name: "CreateApprovalHookForm",

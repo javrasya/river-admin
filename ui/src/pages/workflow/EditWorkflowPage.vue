@@ -52,11 +52,11 @@
 </template>
 
 <script>
-import WorkflowIllustration from "../../components/WorkflowIllustration";
-import StateInput from "../../components/StateInput";
-import { Woprkflow, Approval, Transition, State, Workflow } from "../../models/models";
-import { emit_success } from "../../helpers/event_bus";
-import http from "../../helpers/http";
+import WorkflowIllustration from "@/components/WorkflowIllustration.vue";
+import StateInput from "@/components/StateInput.vue";
+import { Workflow, Approval, Transition, State } from "@/models/models";
+import { emit_success } from "@/helpers/event_bus";
+import http from "@/helpers/http";
 
 export default {
   name: "CreateWorkflowPage",

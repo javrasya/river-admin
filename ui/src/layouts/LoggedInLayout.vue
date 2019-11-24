@@ -105,9 +105,9 @@
 </template>
 
 <script>
-import { emit_logout } from "../helpers/event_bus";
-import { auth, WORKFLOW, FUNCTION, STATE } from "../helpers/auth";
-import http from "../helpers/http";
+import { emit_logout } from "@/helpers/event_bus";
+import { auth, WORKFLOW, FUNCTION, STATE } from "@/helpers/auth";
+import http from "@/helpers/http";
 
 export default {
   name: "LoggedInLayout",

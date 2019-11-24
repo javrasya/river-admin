@@ -16,7 +16,7 @@ describe('StateInput.vue', () => {
 
     it('should not fetch states unless the typing starts', async () => {
 
-        var has_permission_spy = jest.spyOn(auth, "_has_permission").mockImplementation((operation, object_type, callback) => (Promise.resolve(callback())));
+        var has_permission_spy = jest.spyOn(auth, "_has_permission").mockImplementation((operation, object_type, callback) => (Promise.resolve(callback(true))));
 
         const wrapper = mount(StateInput, {
             vuetify,
@@ -31,7 +31,7 @@ describe('StateInput.vue', () => {
 
     it('should not show creating state option when user is not authorized', async () => {
 
-        var has_permission_spy = jest.spyOn(auth, "_has_permission").mockImplementation(() => (Promise.resolve()));
+        var has_permission_spy = jest.spyOn(auth, "_has_permission").mockImplementation((operation, object_type, callback) => (Promise.resolve(callback(false))));
         var remote_states_spy = jest.spyOn(http, "get").mockImplementation((url, callback) => (Promise.resolve(callback(
             {
                 data: [
@@ -62,7 +62,7 @@ describe('StateInput.vue', () => {
 
     it('should show creating state option when user is authorized', async () => {
 
-        var has_permission_spy = jest.spyOn(auth, "_has_permission").mockImplementation((operation, object_type, callback) => (Promise.resolve(callback())));
+        var has_permission_spy = jest.spyOn(auth, "_has_permission").mockImplementation((operation, object_type, callback) => (Promise.resolve(callback(true))));
         var remote_states_spy = jest.spyOn(http, "get").mockImplementation((url, callback) => (Promise.resolve(callback(
             {
                 data: [
@@ -94,7 +94,7 @@ describe('StateInput.vue', () => {
 
     it('should filter out those that doesnt match the search', async () => {
 
-        var has_permission_spy = jest.spyOn(auth, "_has_permission").mockImplementation((operation, object_type, callback) => (Promise.resolve(callback())));
+        var has_permission_spy = jest.spyOn(auth, "_has_permission").mockImplementation((operation, object_type, callback) => (Promise.resolve(callback(true))));
         var remote_states_spy = jest.spyOn(http, "get").mockImplementation((url, callback) => (Promise.resolve(callback(
             {
                 data: [

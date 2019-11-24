@@ -30,9 +30,9 @@
 </template>
 
 <script>
-import http from "../helpers/http";
-import { auth, STATE } from "../helpers/auth";
-import { State } from "../models/models";
+import http from "@/helpers/http";
+import { auth, STATE } from "@/helpers/auth";
+import { State } from "@/models/models";
 
 export default {
   name: "StateInput",

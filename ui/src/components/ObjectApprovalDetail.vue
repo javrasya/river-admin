@@ -109,9 +109,9 @@
 </template>
 
 <script>
-import { ObjectApproval } from "../models/models";
-import HookDetail from "./HookDetail";
-import CreateApprovalHookForm from "./CreateApprovalHookForm";
+import { ObjectApproval } from "@/models/models";
+import HookDetail from "@/components/HookDetail.vue";
+import CreateApprovalHookForm from "@/components/CreateApprovalHookForm.vue";
 
 export default {
   name: "ObjectApprovalDetail",

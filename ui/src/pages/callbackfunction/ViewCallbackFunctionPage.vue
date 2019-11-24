@@ -33,8 +33,8 @@
 </template>
 
 <script>
-import CodeEditor from "../../components/CodeEditor";
-import http from "../../helpers/http";
+import CodeEditor from "@/components/CodeEditor.vue";
+import http from "@/helpers/http";
 
 export default {
   name: "CreateCallbackFunctionPage",

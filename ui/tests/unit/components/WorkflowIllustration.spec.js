@@ -1,7 +1,7 @@
 import Vuetify from 'vuetify'
 import Vue from 'vue'
 import { mount } from '@vue/test-utils'
-import { Workflow, State, Transition } from "../../../src/models/models"
+import { Workflow, State, Transition } from "@/models/models"
 import WorkflowIllustration from '@/components/WorkflowIllustration.vue'
 
 describe('WorkflowIllustration.vue', () => {

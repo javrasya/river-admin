@@ -103,8 +103,8 @@
 </template>
 
 <script>
-import { Approval } from "../models/models";
-import http from "../helpers/http";
+import { Approval } from "@/models/models";
+import http from "@/helpers/http";
 
 export default {
   name: "CreateApprovalForm",

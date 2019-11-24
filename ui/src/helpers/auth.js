@@ -1,6 +1,6 @@
 
 
-import http from "./http"
+import http from "@/helpers/http"
 
 export const ADD = "add"
 export const CHANGE = "change"

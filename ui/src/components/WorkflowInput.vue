@@ -28,8 +28,8 @@
 </template>
 
 <script>
-import { Workflow } from "../models/models";
-import http from "../helpers/http";
+import { Workflow } from "@/models/models";
+import http from "@/helpers/http";
 
 export default {
   name: "WorkflowInput",

@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import { Transition } from "../models/models";
+import { Transition } from "@/models/models";
 import * as d3 from "d3";
 import dagreD3 from "dagre-d3";
 

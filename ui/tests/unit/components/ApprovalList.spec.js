@@ -1,7 +1,7 @@
 import Vuetify from 'vuetify'
 import Vue from 'vue'
 import { mount } from '@vue/test-utils'
-import { Workflow, State, Approval } from "../../../src/models/models"
+import { Workflow, State, Approval } from "@/models/models"
 import ApprovalDetail from '@/components/ApprovalDetail.vue'
 import ApprovalList from '@/components/ApprovalList.vue'
 

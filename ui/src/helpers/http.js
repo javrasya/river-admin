@@ -1,7 +1,7 @@
-import store from '../store';
+import store from '@/store';
 import axios from 'axios';
-import { CAN_NOT_DELETE_DUE_TO_PROTECTION } from "./errors"
-import { emit_logout, emit_error } from "./event_bus"
+import { CAN_NOT_DELETE_DUE_TO_PROTECTION } from "@/helpers/errors"
+import { emit_logout, emit_error } from "@/helpers/event_bus"
 
 const getHeaders = () => ({ Authorization: `Token ${store.state.user.token}` })
 class Http {

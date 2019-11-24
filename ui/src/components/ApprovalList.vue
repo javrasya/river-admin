@@ -31,10 +31,10 @@
 </template>
 
 <script>
-import { Approval } from "../models/models";
-import ApprovalDetail from "./ApprovalDetail";
-import HookDetail from "./HookDetail";
-import http from "../helpers/http";
+import { Approval } from "@/models/models";
+import ApprovalDetail from "@/components/ApprovalDetail.vue";
+import HookDetail from "@/components/HookDetail.vue";
+import http from "@/helpers/http";
 import { Container, Draggable } from "vue-smooth-dnd";
 
 export default {

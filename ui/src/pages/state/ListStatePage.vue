@@ -44,9 +44,9 @@
 </template>
 
 <script>
-import { emit_success } from "../../helpers/event_bus";
-import { auth, STATE } from "../../helpers/auth";
-import http from "../../helpers/http";
+import { emit_success } from "@/helpers/event_bus";
+import { auth, STATE } from "@/helpers/auth";
+import http from "@/helpers/http";
 export default {
   name: "ListStatePage",
   data: () => ({

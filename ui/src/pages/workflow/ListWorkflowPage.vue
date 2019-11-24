@@ -154,12 +154,12 @@
 </template>
 
 <script>
-import http from "../../helpers/http";
-import EmptyState from "../../components/EmptyState";
-import H5Max from "../../components/H5Max";
-import { emit_success } from "../../helpers/event_bus";
-import { auth, WORKFLOW } from "../../helpers/auth";
-import { Workflow } from "../../models/models";
+import http from "@/helpers/http";
+import EmptyState from "@/components/EmptyState.vue";
+import H5Max from "@/components/H5Max.vue";
+import { emit_success } from "@/helpers/event_bus";
+import { auth, WORKFLOW } from "@/helpers/auth";
+import { Workflow } from "@/models/models";
 
 export default {
   name: "ListWorkflowPage",

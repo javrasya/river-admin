@@ -21,10 +21,10 @@
 </template>
 
 <script>
-import { ObjectApproval } from "../models/models";
-import ObjectApprovalDetail from "./ObjectApprovalDetail";
-import HookDetail from "./HookDetail";
-import http from "../helpers/http";
+import { ObjectApproval } from "@/models/models";
+import ObjectApprovalDetail from "@/components/ObjectApprovalDetail.vue";
+import HookDetail from "@/components/HookDetail.vue";
+import http from "@/helpers/http";
 
 export default {
   name: "ObjectApprovalList",
