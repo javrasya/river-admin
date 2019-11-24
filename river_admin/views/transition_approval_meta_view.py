@@ -62,4 +62,10 @@ def re_prioritize_it(request):
 @get(r'^transition-approval-meta/approval-hook/list/(?P<transition_approval_meta_id>\w+)/$')
 def list_approval_hooks(request, transition_approval_meta_id):
     transition_approval_meta = get_object_or_404(TransitionApprovalMeta.objects.all(), pk=transition_approval_meta_id)
-    return Response(ApprovalHookDto(transition_approval_meta.on_approved_hooks.filter(transition_approval__isnull=True, object_id__isnull=True), many=True).data, status=HTTP_200_OK)
+    return Response(
+        ApprovalHookDto(
+            transition_approval_meta.on_approved_hooks.filter(transition_approval__isnull=True, object_id__isnull=True),
+            many=True
+        ).data,
+        status=HTTP_200_OK
+    )

@@ -7,7 +7,8 @@ from river.models import Workflow, State
 
 import river_admin
 from river_admin.views import get, post, delete, StateDto
-from river_admin.views.serializers import WorkflowStateFieldDto, CreateWorkflowDto, WorkflowDto, TransitionMetaDto, TransitionApprovalMetaDto, TransitionDto, TransitionApprovalDto, WorkflowMetadataDto
+from river_admin.views.serializers import WorkflowStateFieldDto, CreateWorkflowDto, WorkflowDto, \
+    TransitionMetaDto, TransitionDto, WorkflowMetadataDto
 
 
 @get(r'^workflow/get/(?P<pk>\w+)/$')

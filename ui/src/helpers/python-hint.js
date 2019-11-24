@@ -30,7 +30,8 @@ export default function initializePythonHints(recognized_functions) {
         function arrayContains(arr, item) {
             if (!Array.prototype.indexOf) {
                 var i = arr.length;
-                while (i--) {
+                while (i) {
+                    i--;
                     if (arr[i] === item) {
                         return true;
                     }
@@ -43,7 +44,7 @@ export default function initializePythonHints(recognized_functions) {
         function getCompletions(token, context) {
             var found = [], start = token.string;
             function maybeAdd(str) {
-                if (str.indexOf(start) == 0 && !arrayContains(found, str)) found.push(str);
+                if (str.indexOf(start) === 0 && !arrayContains(found, str)) found.push(str);
             }
 
             function gatherCompletions(_obj) {
@@ -88,7 +89,7 @@ export default function initializePythonHints(recognized_functions) {
             var completionList = getCompletions(token, context);
             completionList = completionList.sort();
             //prevent autocomplete for last word, instead show dropdown with one word
-            if (completionList.length == 1) {
+            if (completionList.length === 1) {
                 completionList.push(" ");
             }
 

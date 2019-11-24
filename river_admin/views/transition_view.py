@@ -24,4 +24,10 @@ def list_transition_approvals(request, transition_id):
 @get(r'^transition/transition-hook/list/(?P<transition_id>\w+)/$')
 def list_transition_hooks(request, transition_id):
     transition = get_object_or_404(Transition.objects.all(), pk=transition_id)
-    return Response(TransitionHookDto(transition.meta.on_transit_hooks.filter(Q(object_id__isnull=True) | Q(object_id=transition.object_id)), many=True).data, status=HTTP_200_OK)
+    return Response(
+        TransitionHookDto(
+            transition.meta.on_transit_hooks.filter(Q(object_id__isnull=True) | Q(object_id=transition.object_id)),
+            many=True
+        ).data,
+        status=HTTP_200_OK
+    )

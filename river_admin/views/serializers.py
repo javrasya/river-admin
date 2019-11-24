@@ -1,7 +1,8 @@
 from django.contrib.auth.models import Permission, Group, User
 from django.contrib.contenttypes.models import ContentType
 from rest_framework import serializers
-from river.models import Function, OnApprovedHook, State, TransitionApprovalMeta, OnTransitHook, TransitionMeta, Transition, Workflow, TransitionApproval, DONE, CANCELLED
+from river.models import Function, OnApprovedHook, State, TransitionApprovalMeta, \
+    OnTransitHook, TransitionMeta, Transition, Workflow, TransitionApproval, DONE, CANCELLED
 
 from river.models.hook import AFTER, BEFORE
 

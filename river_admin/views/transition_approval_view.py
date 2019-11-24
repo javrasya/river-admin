@@ -1,5 +1,4 @@
 from rest_framework.generics import get_object_or_404
-from rest_framework.generics import get_object_or_404
 from rest_framework.response import Response
 from rest_framework.status import HTTP_200_OK
 from river.models import TransitionApproval, Transition
@@ -23,4 +22,10 @@ def get_by_transition(request, transition_id):
 @get(r'^transition-approval/approval-hook/list/(?P<transition_approval_id>\w+)/$')
 def list_approval_hooks(request, transition_approval_id):
     transition_approval = get_object_or_404(TransitionApproval.objects.all(), pk=transition_approval_id)
-    return Response(ApprovalHookDto(transition_approval.meta.on_approved_hooks.filter(Q(object_id__isnull=True) | Q(object_id=transition_approval.object_id)), many=True).data, status=HTTP_200_OK)
+    return Response(
+        ApprovalHookDto(
+            transition_approval.meta.on_approved_hooks.filter(Q(object_id__isnull=True) | Q(object_id=transition_approval.object_id)),
+            many=True
+        ).data,
+        status=HTTP_200_OK
+    )

@@ -1,7 +1,7 @@
 from rest_framework.generics import get_object_or_404
 from rest_framework.response import Response
 from rest_framework.status import HTTP_200_OK, HTTP_400_BAD_REQUEST
-from river.models import TransitionMeta, Workflow
+from river.models import TransitionMeta
 
 from river_admin.views import get, post
 from river_admin.views.serializers import TransitionMetaDto, CreateTransitionMetaDto, TransitionHookDto, TransitionApprovalMetaDto
@@ -32,10 +32,22 @@ def create_it(request):
 def list_transition_approval_meta(request, transition_meta_id):
     transition_meta = get_object_or_404(TransitionMeta.objects.all(), pk=transition_meta_id)
 
-    return Response(TransitionApprovalMetaDto(transition_meta.transition_approval_meta.all().order_by("transition_meta", "priority"), many=True).data, status=HTTP_200_OK)
+    return Response(
+        TransitionApprovalMetaDto(
+            transition_meta.transition_approval_meta.all().order_by("transition_meta", "priority"),
+            many=True
+        ).data,
+        status=HTTP_200_OK
+    )
 
 
 @get(r'^transition-meta/transition-hook/list/(?P<transition_meta_id>\w+)/$')
 def list_transition_hooks(request, transition_meta_id):
     transition_meta = get_object_or_404(TransitionMeta.objects.all(), pk=transition_meta_id)
-    return Response(TransitionHookDto(transition_meta.on_transit_hooks.filter(transition__isnull=True, object_id__isnull=True), many=True).data, status=HTTP_200_OK)
+    return Response(
+        TransitionHookDto(
+            transition_meta.on_transit_hooks.filter(transition__isnull=True, object_id__isnull=True),
+            many=True
+        ).data,
+        status=HTTP_200_OK
+    )

@@ -33,7 +33,13 @@ def get_current_iteration(request, workflow_pk, object_id):
     workflow_object = get_object_or_404(model_class.objects.all(), pk=object_id)
 
     current_state = getattr(workflow_object, workflow.field_name)
-    iterations = workflow.transitions.filter(workflow=workflow, object_id=workflow_object.pk, destination_state=current_state, status=DONE).values_list("iteration", flat=True)
+    iterations = workflow.transitions.filter(
+        workflow=workflow,
+        object_id=workflow_object.pk,
+        destination_state=current_state,
+        status=DONE
+    ).values_list("iteration", flat=True)
+
     last_iteration = max(iterations) + 1 if iterations else 0
     return Response(last_iteration, status=status.HTTP_200_OK)
 

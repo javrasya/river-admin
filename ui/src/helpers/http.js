@@ -9,7 +9,7 @@ class Http {
     _request(options, callback) {
         return axios(options).then(callback).catch(error => {
             if (error.response) {
-                if (error.response.status == 401 || error.response.status == 403) {
+                if (error.response.status === 401 || error.response.status === 403) {
                     emit_logout()
                 } else {
                     this.handle_error(error.response)
@@ -36,8 +36,7 @@ class Http {
     }
 
     handle_error(error) {
-        var that = this;
-        if (error.status == 400) {
+        if (error.status === 400) {
             error.data.forEach(err => {
                 switch (err.error_code) {
                     case CAN_NOT_DELETE_DUE_TO_PROTECTION:
