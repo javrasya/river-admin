@@ -1,6 +1,6 @@
 from rest_framework.generics import get_object_or_404
 from rest_framework.response import Response
-from rest_framework.status import HTTP_200_OK
+from rest_framework.status import HTTP_200_OK, HTTP_400_BAD_REQUEST
 from river.models import State
 
 from river_admin.views import get, post, delete
@@ -24,6 +24,8 @@ def create_it(request):
     if create_state_request.is_valid():
         state = create_state_request.save()
         return Response({"id": state.id}, status=HTTP_200_OK)
+    else:
+        return Response(create_state_request.errors, status=HTTP_400_BAD_REQUEST)
 
 
 @delete(r'^state/delete/(?P<pk>\w+)/$')

@@ -42,7 +42,7 @@ Tests
 ~~~~~
 
 Tox_ is used on the backend side to automate ``Python`` & ``Django``
-testing. Simply run
+testing. Tests are under ``river-admin/tets/``. Simply run
 
    .. code:: bash
 
@@ -53,9 +53,7 @@ To run it for a specific environment;
    .. code:: bash
 
        tox -e py34-dj2.1
-
-
-
+s
 
 River Admin UI
 --------------
@@ -95,7 +93,7 @@ Tests
 ~~~~~
 
 UI tests are written with Jest_ javascript testing
-framework from Facebook. They are under ``ui/tets/``.
+framework from Facebook. Tests are under ``ui/tets/``.
 To run the tests simply;
 
    .. code:: bash

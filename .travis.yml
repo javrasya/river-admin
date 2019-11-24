@@ -1,0 +1,107 @@
+sudo: false
+matrix:
+  include:
+    - language: python
+      python: "2.7"
+      cache: pip
+      env: TOXENV=py27-dj1.11
+      install:
+        - pip install tox-travis
+      script:
+        - tox
+    - language: python
+      python: "3.4"
+      cache: pip
+      env: TOXENV=py34-dj1.11
+      install:
+        - pip install tox-travis
+      script:
+        - tox
+    - language: python
+      python: "3.5"
+      cache: pip
+      env: TOXENV=py35-dj1.11
+      install:
+        - pip install tox-travis
+      script:
+        - tox
+    - language: python
+      python: "3.5"
+      cache: pip
+      env: TOXENV=py35-dj2.0
+      install:
+        - pip install tox-travis
+      script:
+        - tox
+    - language: python
+      python: "3.5"
+      cache: pip
+      env: TOXENV=py35-dj2.1
+      install:
+        - pip install tox-travis
+      script:
+        - tox
+    - language: python
+      python: "3.5"
+      cache: pip
+      env: TOXENV=py35-dj2.2
+      install:
+        - pip install tox-travis
+      script:
+        - tox
+    - language: python
+      python: "3.6"
+      cache: pip
+      env: TOXENV=py36-dj1.11
+      install:
+        - pip install tox-travis
+      script:
+        - tox
+    - language: python
+      python: "3.6"
+      cache: pip
+      env: TOXENV=py36-dj2.0
+      install:
+        - pip install tox-travis
+      script:
+        - tox
+    - language: python
+      python: "3.6"
+      cache: pip
+      env: TOXENV=py36-dj2.1
+      install:
+        - pip install tox-travis
+      script:
+        - tox
+    - language: python
+      python: "3.6"
+      cache: pip
+      env: TOXENV=py36-dj2.2
+      install:
+        - pip install tox-travis
+      script:
+        - tox
+    - language: python
+      python: "3.6"
+      cache: pip
+      env: TOXENV=cov
+      install:
+        - pip install tox-travis
+        - pip install coveralls
+      script:
+        - tox
+      after_success:
+        - coveralls
+    - language: node_js
+      node_js: '12'
+      cache:
+        yarn: true
+        directories:
+          - node_modules
+      before_install:
+        - curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.15.2
+        - export PATH="$HOME/.yarn/bin:$PATH"
+      install:
+        - yarn --frozen-lockfile --non-interactive
+      script:
+        - yarn test:unit

@@ -1,4 +1,5 @@
 from django.conf.urls import url
+from django.db import IntegrityError
 from django.db.models import ProtectedError
 from rest_framework import serializers
 from rest_framework.authentication import TokenAuthentication
@@ -6,7 +7,7 @@ from rest_framework.decorators import api_view, authentication_classes, renderer
 from rest_framework.renderers import TemplateHTMLRenderer, JSONRenderer
 from rest_framework.views import exception_handler as drf_exception_handler
 
-from river_admin.views.error_code import CAN_NOT_DELETE_DUE_TO_PROTECTION
+from river_admin.views.error_code import CAN_NOT_DELETE_DUE_TO_PROTECTION, DUPLICATE_ITEM
 
 urls = []
 
@@ -72,6 +73,9 @@ def exception_handler(exc, context):
 
         if protected_errors:
             errors.append({"error_code": error_code, "detail": {"protected_errors": protected_errors}})
+
+    elif isinstance(exc, IntegrityError):
+        errors.append({"error_code": DUPLICATE_ITEM, "detail": {"duplicates": exc.args}})
 
     if errors:
         return Response(ErrorResponse(errors, many=True).data, status=HTTP_400_BAD_REQUEST)
