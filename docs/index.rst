@@ -19,14 +19,14 @@
 
 .. |Workflow Edit Img| image:: /_static/images/edit-workflow-in-macbook.png
 
-.. |Custom Admin| image:: /_static/images/custom-admin.png
+.. |Images| image:: /_static/images/readme-images.gif
 
 
 
 River Admin
 ===========
 
-.. rst-class:: center
+.. rst-class:: center-without-bg
 
 |Build Status| |Doc Status| |Coverage Status| |Code Quality|
 
@@ -39,12 +39,9 @@ The power of it comes from the libraries it uses on both backend and
 frontend sides which are ``django-river``, ``django-rest-framework``
 ``Vue``, ``Vuetify``
 
-.. rst-class:: image-slide
+.. rst-class:: center-without-bg
 
-|Home Img|
-|Workflow Edit Img|
-|Re-prio Img|
-|Timeline Img|
+|Images|
 
 Each will be documented in detail but here what you
 can briefly have with ``River Admin`` are that;
