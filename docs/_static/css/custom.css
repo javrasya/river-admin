@@ -13,7 +13,6 @@
     width: 325px; 
     height: 200px; 
     padding: 10px; 
-    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
 }
 
 @media only screen 
@@ -24,7 +23,7 @@ and (min-width : 824px) {
         width: 500px; 
         height: 300px; 
         padding: 10px; 
-        box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+        background-color: transparent;
     }
 }
 
@@ -36,7 +35,7 @@ and (min-width : 1424px) {
         width: 700px; 
         height: 425px; 
         padding: 10px; 
-        box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+        background-color: transparent;
     }
 }
 
@@ -48,7 +47,7 @@ and (min-width : 1824px) {
         width: 1000px; 
         height: 600px; 
         padding: 10px; 
-        box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+        background-color: transparent;
     }
 }
 
@@ -59,6 +58,7 @@ and (min-width : 1824px) {
     left: 10px; 
     right: 10px; 
     bottom: 10px; 
+    background-color: transparent;
 }
 
 .center {
