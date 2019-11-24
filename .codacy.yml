@@ -1,0 +1,6 @@
+---
+exclude_paths:
+  - 'river-admin/migrations/*'
+  - 'river_admin_shipping_example/*'
+  - 'river_admin_issue_tracker_example/*'
+  - '**/tests/**'
