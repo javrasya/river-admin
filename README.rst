@@ -127,7 +127,7 @@ look at `django-river`_
 
    .. code:: bash
 
-       python manage.py collectstatic
+       python manage.py collectstatic --no-input --no-post-process
 
 5. Run your application;
 
@@ -177,6 +177,7 @@ Enable the example app and then run your application
    .. code:: bash
 
         python manage.py migrate
+        python manage.py bootstrap_shipping_example
 
 |Shipping Workflow Img|
 
@@ -201,6 +202,7 @@ Enable the example app and then run your application
    .. code:: bash
 
         python manage.py migrate
+        python manage.py bootstrap_issue_tracker_example
 
 |Issue Tracking Workflow Img|
 
