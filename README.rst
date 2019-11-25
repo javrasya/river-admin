@@ -30,9 +30,10 @@ River Admin
 |Build Status| |Doc Status| |Licence| |Coverage Status| |Code Quality|
 
 \:rocket\: \:rocket\: \:rocket\: ``River Admin`` is a very modern and
-a shiny web application functioning like an admin interface that provides
-administration for django-river_ . It basically extends the ``django-river``
-flexibility with some user friendly and very easy to use admin interfaces.
+a shiny customizable admin extension with user friendly and easy to use
+interfaces for django-river_ . The power of it comes from the libraries
+it uses on both backend and frontend sides which are ``django-river``,
+``django-rest-framework`` ``Vue`` and ``Vuetify``.
 
 .. _`Browser Support`: https://vuetifyjs.com/en/getting-started/browser-support#browser-support
 .. _`Vuetify`: https://vuetifyjs.com/en/
@@ -77,9 +78,9 @@ Installation
 
 **Note:** Before you can set up your workflow, your app
 integration with ``django-river`` must be done.
-Don't worry it is with the easiest setup.To see
-how to do it with ``django-river`` pleas have a
-look at `django-river`
+Don't worry it pretty trivial to set it up. To see
+how to do it with ``django-river`` please have a
+look at `django-river`_
 
 1. Install and enable it
 

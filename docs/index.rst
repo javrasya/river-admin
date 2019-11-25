@@ -34,14 +34,11 @@ River Admin
 
 |Build Status| |Doc Status| |Licence| |Coverage Status| |Code Quality|
 
-``River Admin`` is a very modern and shiny web application functioning
-like an admin interface that provides administration for django-river_ .
-It basically extends the ``django-river`` flexibility with some user
-friendly and very easy to use admin interfaces.
-
-The power of it comes from the libraries it uses on both backend and
-frontend sides which are ``django-river``, ``django-rest-framework``
-``Vue``, ``Vuetify``
+``River Admin`` is a very modern and
+a shiny customizable admin extension with user friendly and easy to use
+interfaces for django-river_ . The power of it comes from the libraries
+it uses on both backend and frontend sides which are ``django-river``,
+``django-rest-framework`` ``Vue`` and ``Vuetify``.
 
 .. rst-class:: center-without-bg
 
