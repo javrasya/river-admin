@@ -5,6 +5,8 @@ BASE_DIR = os.path.dirname(__file__)
 
 DEBUG = False
 
+ALLOWED_HOSTS = ["127.0.0.1", "localhost", "river-admin-demo.herokuapp.com"]
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
