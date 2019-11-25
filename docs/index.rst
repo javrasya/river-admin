@@ -44,24 +44,7 @@ it uses on both backend and frontend sides which are ``django-river``,
 
 |Images|
 
-Each will be documented in detail but here what you
-can briefly have with ``River Admin`` are that;
-
-* List your workflows
-* Customize your workflow apperance like the icon, the name and list displays in the same way as Django admin
-* Create your workflow
-* Click some buttons to create your transitions and by doing so create your states as well, so easy huh.
-* Create authorization rules for your transitions and drag and drop to re-prioritize them
-* Write your python code with an editor that supports basic highlighting and update it anytime you like
-* Hook your function to a specific transition
-* Hook your function to a specific approval operatation
-* List states and delete them
-* See a specific workflow object timeline to what has happened and what will possibly happen
-* Have your hooks run for a specific workflow object instead of running them for every object in the workflow.
-* Your django authorizations will still be ruling here.
-
 .. _django-river: https://github.com/javrasya/django-river/
-
 
 Donations
 =========

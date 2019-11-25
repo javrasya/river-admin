@@ -37,14 +37,31 @@ Installation
 
    .. code:: python
 
+       # settings.py
+
        INSTALLED_APPS=[
            ...
            'river',
+           'rest_framework.authtoken',
            'river_admin'
            ...
        ]
 
-2. Register ``River Admin`` urls in your app ``urls.py``
+       REST_FRAMEWORK = {
+           'DEFAULT_AUTHENTICATION_CLASSES': [
+               'rest_framework.authentication.BasicAuthentication',
+               'rest_framework.authentication.TokenAuthentication',
+           ],
+           'EXCEPTION_HANDLER': 'river_admin.views.exception_handler'
+       }
+
+2. Do migration;
+
+   .. code:: bash
+
+        python manage.py migrate
+
+3. Register ``River Admin`` urls in your app ``urls.py``
 
    .. code:: python
 
@@ -52,25 +69,24 @@ Installation
             url(r'^', include("river_admin.urls")),
         ]
 
-3. Collect statics **(For production)**;
+4. Collect statics **(For production)**;
 
    .. code:: bash
 
        python manage.py collectstatic
 
-4. Run your application;
+5. Run your application;
 
    .. code:: bash
 
        python manage.py runserver 0.0.0.0:8000
 
 
-5. Open it up on the browser and login with an admin user and enjoy the best way of flowing your work ever :-)
+6. Open it up on the browser and login with an admin user and enjoy the best way of flowing your work ever :-)
 
    .. code:: bash
 
        http://0.0.0.0:8000/river-admin/
-
 
 Out of the Box Examples
 -----------------------
@@ -92,16 +108,22 @@ Enable the example app and then run your application
 
    .. code:: python
 
+       # settings.py
+
        INSTALLED_APPS=[
            ...
            'river',
+           'rest_framework.authtoken',
            'river_admin',
            'river_admin_shipping_example',
            ...
        ]
 
-|Shipping Workflow Img|
+   .. code:: bash
 
+        python manage.py migrate
+
+|Shipping Workflow Img|
 
 Issue Tracking Flow
 ^^^^^^^^^^^^^^^^^^^
@@ -110,13 +132,20 @@ Enable the example app and then run your application
 
    .. code:: python
 
+       # settings.py
+
        INSTALLED_APPS=[
            ...
            'river',
+           'rest_framework.authtoken',
            'river_admin',
            'river_admin_issue_tracker_example',
            ...
        ]
+
+   .. code:: bash
+
+        python manage.py migrate
 
 |Issue Tracking Workflow Img|
 
