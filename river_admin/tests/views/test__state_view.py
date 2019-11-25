@@ -60,6 +60,7 @@ class StateViewTest(TestCase):
 
     def test__shouldCreateState(self):
         response = self.client.post('/state/create/', data={"label": "state-1"})
+        assert_that(response.status_code, equal_to(HTTP_200_OK))
         created_state = State.objects.first()
         assert_that(created_state, not_none())
         assert_that(response.status_code, equal_to(HTTP_200_OK))

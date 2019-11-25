@@ -96,7 +96,7 @@ class CreateWorkflowDto(serializers.ModelSerializer):
 class TransitionMetaDto(serializers.ModelSerializer):
     class Meta:
         model = TransitionMeta
-        fields = ['id', 'source_state', 'destination_state']
+        fields = ['id', 'workflow', 'source_state', 'destination_state']
 
 
 class CreateTransitionMetaDto(serializers.ModelSerializer):
