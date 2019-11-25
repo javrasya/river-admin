@@ -1,2 +1,1 @@
 .pypirc filter=git-crypt diff=git-crypt
-river_admin_demo/settings.py filter=git-crypt diff=git-crypt
