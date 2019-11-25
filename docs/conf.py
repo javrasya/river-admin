@@ -24,9 +24,9 @@ copyright = '2019, Ahmet Dal'
 author = 'Ahmet Dal'
 
 # The short X.Y version
-version = '0.1.0'
+version = '0.3.0'
 # The full version, including alpha/beta/rc tags
-release = '0.1.0'
+release = '0.3.0'
 
 
 # -- General configuration ---------------------------------------------------

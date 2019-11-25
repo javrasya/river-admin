@@ -1,2 +1,8 @@
-include README.rst
 include *.txt
+include README.rst
+include LICENSE
+recursive-include river_admin/static *.js *.css *.png *.ico *.eot *.svg *.ttf *.woff *.woff2
+recursive-include river_admin/templates *.html schema.js
+recursive-include river_admin/locale *.mo
+global-exclude __pycache__
+global-exclude *.py[co]
