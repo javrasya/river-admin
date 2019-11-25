@@ -6,3 +6,4 @@ django-cors-headers
 django-river>=3.0.0
 django-heroku
 psycopg2
+gunicorn
