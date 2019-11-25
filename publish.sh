@@ -1,6 +1,7 @@
 #!/bin/bash
 set -e
 
+
 ENVIRONMENT=$1
 
 if [ -z "$ENVIRONMENT" ]; then
@@ -15,6 +16,10 @@ else
   echo "First argument which is the environment has to be either 'prod' or 'test' not ${ENVIRONMENT}"
   exit 1
 fi
+
+[ -e dist ] && rm -rf dist
+[ -e build ] && rm -rf build
+[ -e river_admin.egg-info ] && rm -rf river_admin.egg-info
 
 python setup.py sdist bdist_wheel
 twine check dist/*
