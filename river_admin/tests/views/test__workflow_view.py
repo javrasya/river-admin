@@ -3,6 +3,7 @@ from hamcrest import equal_to, assert_that, has_entry, has_length, has_item, all
 from rest_framework.status import HTTP_404_NOT_FOUND, HTTP_400_BAD_REQUEST, HTTP_200_OK
 from river.models import State, Workflow, TransitionMeta, Transition
 
+from river_admin import DEFAULT_ADMIN_ICON
 from river_admin.views import ContentType
 
 
@@ -399,7 +400,7 @@ class WorkflowViewTest(TestCase):
             has_item(
                 all_of(
                     has_entry("id", equal_to(str(workflow.id))),
-                    has_entry("icon", "mdi-sitemap"),
+                    has_entry("icon", DEFAULT_ADMIN_ICON),
                     has_entry("name", equal_to("%s (test-field)" % content_type.model_class().__name__)),
                 )
             )

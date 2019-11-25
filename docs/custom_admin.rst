@@ -43,3 +43,30 @@ Here is the output;
 |Custom List Workflow Ojbcets Pages|
 
 
+Method Field
+~~~~~~~~~~~~
+
+``River Admin`` supports custom field that can be fetched from
+a python method instead of the workflow object itself like in
+``Django`` model admins.
+
+
+
+.. code:: python
+
+    # admin.py
+
+    import river_admin
+    from river_admin_shipping_example.models import Shipping
+
+    class ShippingRiverAdmin(river_admin.RiverAdmin):
+        name = "Shipping Flow"
+        icon = "mdi-truck"
+        list_displays = ['custom_pk', 'product', 'customer', 'shipping_status']
+
+        @classmethod
+        def custom_pk(cls, obj):
+            return "Primary Key: %d" % obj.pk
+
+
+    river_admin.site.register(Shipping, "shipping_status", ShippingRiverAdmin)

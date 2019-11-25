@@ -9,11 +9,13 @@ class Site(object):
     def register(self, model_class, field_name, admin):
         key = _to_key(model_class, field_name)
         if key:
+            admin._model_class = model_class
+            admin._field_name = field_name
             self._registry[_to_key(model_class, field_name)] = admin
 
-    def get(self, model_class, field_name):
+    def get(self, model_class, field_name, default=None):
         key = _to_key(model_class, field_name)
         if key:
-            return self._registry.get(_to_key(model_class, field_name), None)
+            return self._registry.get(_to_key(model_class, field_name), default)
         else:
-            return None
+            return default

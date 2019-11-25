@@ -85,16 +85,10 @@ def list_transitions(request, workflow_id):
 
 @get(r'^workflow/object/list/(?P<workflow_pk>\w+)/$')
 def list_workflow_objects(request, workflow_pk):
-    def _get_objects(model_class, headers):
-        for obj in model_class.objects.all():
-            yield dict({key: str(getattr(obj, key, None)) for key in headers}, **{"id": obj.pk, "__str": str(obj)})
-
     workflow = get_object_or_404(Workflow.objects.all(), pk=workflow_pk)
     model_class = workflow.content_type.model_class()
-    registered_admin = river_admin.site.get(model_class, workflow.field_name)
-    headers = registered_admin.list_displays if registered_admin else ["pk", workflow.field_name]
-
-    return Response({"headers": headers, "workflow_objects": list(_get_objects(model_class, headers))}, status=HTTP_200_OK)
+    registered_admin = river_admin.site.get(model_class, workflow.field_name, river_admin.DefaultRiverAdmin.of(model_class, workflow.field_name))
+    return Response({"headers": registered_admin.admin_list_displays, "workflow_objects": list(registered_admin.get_objects())}, status=HTTP_200_OK)
 
 
 @get(r'^workflow/metadata/$')
@@ -103,10 +97,7 @@ def get_workflow_metadata(request):
     for workflow in Workflow.objects.all():
         model_class = workflow.content_type.model_class()
         if model_class:
-            registered_admin = river_admin.site.get(model_class, workflow.field_name)
-            default_name = "%s (%s)" % (model_class.__name__, workflow.field_name)
-            workflow_name = registered_admin.name or default_name if registered_admin else default_name
-            workflow_icon = registered_admin.icon or "mdi-sitemap" if registered_admin else "mdi-sitemap"
-            workflows.append({"id": workflow.id, "name": workflow_name, "icon": workflow_icon})
+            registered_admin = river_admin.site.get(model_class, workflow.field_name, river_admin.DefaultRiverAdmin.of(model_class, workflow.field_name))
+            workflows.append({"id": workflow.id, "name": registered_admin.admin_name, "icon": registered_admin.admin_icon})
 
     return Response(WorkflowMetadataDto(workflows, many=True).data, status=HTTP_200_OK)
