@@ -9,7 +9,7 @@
     :alt: GitHub license
     :target: https://github.com/javrasya/river-admin/blob/master/LICENSE
 
-.. |Coverage Status| image:: https://coveralls.io/repos/github/javrasya/river-admin/badge.svg?branch=master
+.. |Coverage Status| image:: https://coveralls.io/repos/github/javrasya/river-admin/badge.svg?branch=master&service=github
     :target: https://coveralls.io/github/javrasya/river-admin?branch=master
 
 .. |Code Quality| image:: https://api.codacy.com/project/badge/Grade/3e7f03e8df5a488f90fb0ed93295c41b
