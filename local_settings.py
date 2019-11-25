@@ -30,8 +30,8 @@ INSTALLED_APPS = (
     'codemirror2',
     'river',
     'river_admin',
-    'river_admin_shipping_example',
-    'river_admin_issue_tracker_example',
+    #'river_admin_shipping_example',
+    #'river_admin_issue_tracker_example',
 
 )
 
