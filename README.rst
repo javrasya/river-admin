@@ -123,7 +123,7 @@ look at `django-river`_
             url(r'^', include("river_admin.urls")),
         ]
 
-4. Collect statics **(For production)**;
+4. Collect statics and make sure ``STATIC_URL`` is ``/static/`` **(FOR PRODUCTION WHERE DEBUG=False)**;
 
    .. code:: bash
 
