@@ -10,10 +10,10 @@ ALLOWED_HOSTS = ["127.0.0.1", "localhost", "river-admin-demo.herokuapp.com"]
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'dgbhuet3o0ndo',
+        'NAME': os.environ.get("DB_NAME"),
         'USER': os.environ.get("DB_USERNAME"),
         'PASSWORD': os.environ.get("DB_PASSWORD"),
-        'HOST': 'ec2-54-247-177-254.eu-west-1.compute.amazonaws.com',
+        'HOST': os.environ.get("DATABASE_URL"),
         'PORT': '5432'
     },
 }
