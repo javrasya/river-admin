@@ -1,8 +1,7 @@
 [run]
 omit =
-    river_admin_issue_tracker_example/*
-    river_admin_demo/*
-    river_admin_shipping_example/*
+    demo/*
+    examples/*
     river_admin/tests/*
     river_admin/migrations/*
     river_admin/urls.py

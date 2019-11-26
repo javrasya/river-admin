@@ -1,1 +1,2 @@
-web: gunicorn river_admin_demo.wsgi
+release: python manage.py migrate
+web: gunicorn demo.wsgi

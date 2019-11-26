@@ -21,7 +21,7 @@ practice
     # admin.py
 
     import river_admin
-    from river_admin_shipping_example.models import Shipping
+    from examples.shipping_example.models import Shipping
 
     class ShippingRiverAdmin(river_admin.RiverAdmin):
         name = "Shipping Flow"
@@ -57,7 +57,7 @@ a python method instead of the workflow object itself like in
     # admin.py
 
     import river_admin
-    from river_admin_shipping_example.models import Shipping
+    from examples.shipping_example.models import Shipping
 
     class ShippingRiverAdmin(river_admin.RiverAdmin):
         name = "Shipping Flow"

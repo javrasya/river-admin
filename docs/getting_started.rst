@@ -115,7 +115,7 @@ Enable the example app and then run your application
            'river',
            'rest_framework.authtoken',
            'river_admin',
-           'river_admin_shipping_example',
+           'examples.shipping_example',
            ...
        ]
 
@@ -140,7 +140,7 @@ Enable the example app and then run your application
            'river',
            'rest_framework.authtoken',
            'river_admin',
-           'river_admin_issue_tracker_example',
+           'examples.issue_tracker_example',
            ...
        ]
 
