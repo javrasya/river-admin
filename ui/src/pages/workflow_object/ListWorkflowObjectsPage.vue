@@ -24,11 +24,18 @@
               <v-tooltip top>
                 <template v-slot:activator="{ on }">
                   <v-icon
+                    v-if="has_change_workflow_permission"
                     class="mr-1"
                     v-on="on"
                     color="primary"
                     @click="goToTimeline(item)"
-                    :disabled="!has_change_workflow_permission"
+                  >mdi-timeline-text</v-icon>
+                  <v-icon
+                    v-else
+                    class="mr-1"
+                    v-on="on"
+                    color="primary"
+                    @click="goToViewTimeline(item)"
                   >mdi-timeline-text</v-icon>
                 </template>
                 <span>View Timeline</span>
@@ -139,13 +146,19 @@ export default {
           this.headers = response.data.headers
             .map(key => ({ text: key, value: key, align: "left" }))
             .concat([{ text: "Actions", value: "action", sortable: false }]);
-          this.workflow_objects = response.data.workflow_objects.map(workflow_object => ({ ...workflow_object, identifier: workflow_object.__str }));
+          this.workflow_objects = responcse.data.workflow_objects.map(workflow_object => ({ ...workflow_object, identifier: workflow_object.__str }));
         })
         .finally(() => (this.workflow_object_loading = false));
     },
     goToTimeline(item) {
       this.$router.push({
         name: "edit-workflow-object-timeline",
+        params: { workflow_id: this.workflow.id, object_id: item.pk }
+      });
+    },
+    goToViewTimeline(item) {
+      this.$router.push({
+        name: "view-workflow-object-timeline",
         params: { workflow_id: this.workflow.id, object_id: item.pk }
       });
     },
