@@ -1,1 +1,2 @@
 .pypirc filter=git-crypt diff=git-crypt
+db_credentials.txt filter=git-crypt diff=git-crypt
