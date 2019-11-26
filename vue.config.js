@@ -1,5 +1,6 @@
 module.exports = {
       // options...
+      publicPath: "/static/",
       outputDir: __dirname + '/river_admin/templates/',
       assetsDir: '../static/',
       devServer: {

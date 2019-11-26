@@ -5,7 +5,11 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "postbuild": "sed -i -e 's/\\/\\.\\.//g' ./river_admin/templates/index.html && rm -rf ./river_admin/templates/index.html-e" ,
+    "_fix_html": "sed -i '' 's/\\(\\/\\{0,1\\}[a-zA-Z0-9\\-_\\.]*\\)*\\(\\/\\{0,1\\}static\\/\\)/\\/static\\//g' ./river_admin/templates/index.html",
+    "_fix_js": "sed -i '' 's/\\(\\/\\{0,1\\}[a-zA-Z0-9\\-_\\.]*\\)*\\(\\/\\{0,1\\}static\\/\\)/\\/static\\//g' $(find ./river_admin/static/ -type f -iname '*.js')",
+    "_fix_css": "sed -i '' 's/\\(\\/\\{0,1\\}[a-zA-Z0-9\\-_\\.]*\\)*\\(\\/\\{0,1\\}static\\/\\)/\\/static\\//g' $(find ./river_admin/static/ -type f -iname '*.css')",
+    "prebuild": "rm -rf ./river_admin/templates/* && rm -rf ./river_admin/static/*",
+    "postbuild": "npm run _fix_html && npm run _fix_js && npm run _fix_css && mv ./river_admin/templates/favicon.ico ./river_admin/static/",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit",
     "test:debug": "node --inspect-brk node_modules/.bin/vue-cli-service test:unit --no-cache --watch --runInBand"
