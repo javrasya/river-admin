@@ -14,6 +14,7 @@ river_admin.site.register(Shipping, "shipping_status", ShippingRiverAdmin)
 
 
 class ShippingAdmin(admin.ModelAdmin):
+    list_display = ('pk', 'product', 'customer', 'shipping_status',)
     readonly_fields = ('shipping_status',)
 
 

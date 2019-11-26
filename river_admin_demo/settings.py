@@ -34,6 +34,7 @@ INSTALLED_APPS = (
     'river_admin',
     'river_admin_shipping_example',
     'river_admin_issue_tracker_example',
+    'river_admin_demo'
 )
 
 MIDDLEWARE = [
