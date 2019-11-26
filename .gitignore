@@ -22,8 +22,8 @@ doc_build
 node_modules
 /dist
 
-staticfiles
-staticfiles.json
+**staticfiles**
+**staticfiles.json**
 
 # local env files
 .env.local
