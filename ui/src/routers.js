@@ -92,12 +92,12 @@ var router = new VueRouter({
             component: ListWorkflowObjectsPage,
         },
         {
-            path: '/workflow-object/timeline/:workflow_id/:object_id',
+            path: '/workflow-object/timeline/edit/:workflow_id/:object_id',
             name: 'edit-workflow-object-timeline',
             component: EditWorkflowObjectTimelinePage,
         },
         {
-            path: '/workflow-object/timeline/:workflow_id/:object_id',
+            path: '/workflow-object/timeline/view/:workflow_id/:object_id',
             name: 'view-workflow-object-timeline',
             component: EditWorkflowObjectTimelinePage,
             props: { readonly: true }

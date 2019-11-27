@@ -5,7 +5,7 @@ from django.contrib.contenttypes.models import ContentType
 from django.core.management.base import BaseCommand
 from django.db import transaction
 from faker import Faker
-from river.models import Workflow, State
+from river.models import Workflow, State, Function
 
 from examples.issue_tracker_example.management.commands.bootstrap_issue_tracker_example import IN_PROGRESS, RESOLVED, CLOSED as ISSUE_CLOSED, RE_OPENED
 from examples.issue_tracker_example.models import Issue
@@ -27,6 +27,9 @@ class Command(BaseCommand):
         self.delivery_persons = []
         self.courier_company_attendants = []
         self.finance_managers = []
+        self.view_issue_permission = Permission.objects.get(codename="view_issue", content_type=ContentType.objects.get_for_model(Issue))
+        self.view_shipping_permission = Permission.objects.get(codename="view_shipping", content_type=ContentType.objects.get_for_model(Shipping))
+        self.view_workflow_permission = Permission.objects.get(codename="view_workflow", content_type=ContentType.objects.get_for_model(Workflow))
 
     def _new_user(self, *groups):
         first_name = self.fake.first_name()
@@ -43,16 +46,13 @@ class Command(BaseCommand):
         return user
 
     def _create_issue_tracking_users(self):
-        view_issue_permission = Permission.objects.get(codename="view_issue", content_type=ContentType.objects.get_for_model(Issue))
-        view_workflow_permission = Permission.objects.get(codename="view_workflow", content_type=ContentType.objects.get_for_model(Workflow))
-
         developer = Group.objects.get(name="Developer")
         team_leader = Group.objects.get(name="Team Leader")
         tester = Group.objects.get(name="Tester")
 
-        developer.permissions.set([view_issue_permission, view_workflow_permission])
-        team_leader.permissions.set([view_issue_permission, view_workflow_permission])
-        tester.permissions.set([view_issue_permission, view_workflow_permission])
+        developer.permissions.set([self.view_issue_permission, self.view_workflow_permission])
+        team_leader.permissions.set([self.view_issue_permission, self.view_workflow_permission])
+        tester.permissions.set([self.view_issue_permission, self.view_workflow_permission])
 
         developer.user_set.filter(is_superuser=False).delete()
         team_leader.user_set.filter(is_superuser=False).delete()
@@ -63,18 +63,15 @@ class Command(BaseCommand):
         self.testers = [self._new_user(tester) for _ in range(self.num_of_user_per_group)]
 
     def _create_shipping_users(self):
-        view_shipping_permission = Permission.objects.get(codename="view_shipping", content_type=ContentType.objects.get_for_model(Shipping))
-        view_workflow_permission = Permission.objects.get(codename="view_workflow", content_type=ContentType.objects.get_for_model(Workflow))
-
         warehouse_attendant = Group.objects.get(name="Warehouse Attendant")
         delivery_person = Group.objects.get(name="Delivery Person")
         courier_company_attendant = Group.objects.get(name="Courier Company Attendant")
         finance_manager = Group.objects.get(name="Finance Person")
 
-        warehouse_attendant.permissions.set([view_shipping_permission, view_workflow_permission])
-        delivery_person.permissions.set([view_shipping_permission, view_workflow_permission])
-        courier_company_attendant.permissions.set([view_shipping_permission, view_workflow_permission])
-        finance_manager.permissions.set([view_shipping_permission, view_workflow_permission])
+        warehouse_attendant.permissions.set([self.view_shipping_permission, self.view_workflow_permission])
+        delivery_person.permissions.set([self.view_shipping_permission, self.view_workflow_permission])
+        courier_company_attendant.permissions.set([self.view_shipping_permission, self.view_workflow_permission])
+        finance_manager.permissions.set([self.view_shipping_permission, self.view_workflow_permission])
 
         warehouse_attendant.user_set.filter(is_superuser=False).delete()
         delivery_person.user_set.filter(is_superuser=False).delete()
@@ -237,6 +234,18 @@ class Command(BaseCommand):
 
     @transaction.atomic()
     def handle(self, *args, **options):
+        view_state_permission = Permission.objects.get(codename="view_state", content_type=ContentType.objects.get_for_model(State))
+        view_function_permission = Permission.objects.get(codename="view_function", content_type=ContentType.objects.get_for_model(Function))
+
+        demo_user = User.objects.filter(username="demo").first() or User.objects.create_user(username="demo", password="demo", is_staff=True)
+        demo_user.user_permissions.set([
+            self.view_workflow_permission,
+            self.view_issue_permission,
+            self.view_shipping_permission,
+            view_state_permission,
+            view_function_permission
+        ])
+
         self._create_issue_tracking_users()
         self._create_shipping_users()
 

@@ -1,22 +1,6 @@
 import os
-import django_heroku
 
-BASE_DIR = os.path.dirname(__file__)
-
-DEBUG = False
-
-ALLOWED_HOSTS = ["127.0.0.1", "localhost", "river-admin-demo.herokuapp.com"]
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': os.environ.get("DB_NAME"),
-        'USER': os.environ.get("DB_USERNAME"),
-        'PASSWORD': os.environ.get("DB_PASSWORD"),
-        'HOST': os.environ.get("DATABASE_URL"),
-        'PORT': '5432'
-    },
-}
+BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 RIVER_INJECT_MODEL_ADMIN = False
 USE_TZ = True
@@ -70,14 +54,6 @@ TEMPLATES = [
         },
     },
 ]
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-
-STATIC_URL = '/static/'
-
-STATICFILES_FINDERS = (
-    'django.contrib.staticfiles.finders.FileSystemFinder',
-    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-)
 
 
 class DisableMigrations(object):
@@ -92,7 +68,7 @@ SITE_ID = 1
 
 SECRET_KEY = 'abcde12345'
 
-ROOT_URLCONF = 'local_urls'
+ROOT_URLCONF = 'demo.urls'
 
 LOGGING = {
     'version': 1,
@@ -118,5 +94,3 @@ LOGGING = {
         }
     }
 }
-
-django_heroku.settings(locals())

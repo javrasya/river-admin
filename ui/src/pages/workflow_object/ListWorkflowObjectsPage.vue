@@ -21,17 +21,21 @@
             class="elevation-1"
           >
             <template v-slot:item.action="{ item }">
-              <v-tooltip top>
+              <v-tooltip top v-if="has_change_workflow_permission">
                 <template v-slot:activator="{ on }">
                   <v-icon
-                    v-if="has_change_workflow_permission"
                     class="mr-1"
                     v-on="on"
                     color="primary"
                     @click="goToTimeline(item)"
                   >mdi-timeline-text</v-icon>
+                </template>
+                <span>View & Edit Timeline</span>
+              </v-tooltip>
+
+              <v-tooltip top v-else>
+                <template v-slot:activator="{ on }">
                   <v-icon
-                    v-else
                     class="mr-1"
                     v-on="on"
                     color="primary"
@@ -40,6 +44,7 @@
                 </template>
                 <span>View Timeline</span>
               </v-tooltip>
+
               <v-tooltip top>
                 <template v-slot:activator="{ on }">
                   <v-btn
@@ -146,7 +151,7 @@ export default {
           this.headers = response.data.headers
             .map(key => ({ text: key, value: key, align: "left" }))
             .concat([{ text: "Actions", value: "action", sortable: false }]);
-          this.workflow_objects = responcse.data.workflow_objects.map(workflow_object => ({ ...workflow_object, identifier: workflow_object.__str }));
+          this.workflow_objects = response.data.workflow_objects.map(workflow_object => ({ ...workflow_object, identifier: workflow_object.__str }));
         })
         .finally(() => (this.workflow_object_loading = false));
     },

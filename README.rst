@@ -53,6 +53,29 @@ please consider becoming our `sponsor`_  , `patron`_ or donate over `PayPal`_
 .. _`PayPal`: https://paypal.me/ceahmetdal
 .. _`sponsor`: https://github.com/sponsors/javrasya
 
+Live Demo
+=========
+
+https://river-admin-demo.herokuapp.com/river-admin/
+
+- User: demo
+- Password: demo
+
+To run demo locally;
+
+   .. code:: bash
+
+        export LOCAL_DEMO=True
+        pip install -r requirements.txt
+        python manage.py migrate
+        python manage.py bootstrap_shipping_example
+        python manage.py bootstrap_issue_tracker_example
+        python manage.py bootstrap_river_admin_demo
+        python manage.py runserver
+
+And then go to ``http://127.0.0.1:8000/river-admin/``
+
+
 Documentation
 -------------
 

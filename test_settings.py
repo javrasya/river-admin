@@ -1,7 +1,4 @@
 import os
-import sys
-
-import django
 
 BASE_DIR = os.path.dirname(__file__)
 
@@ -29,9 +26,6 @@ INSTALLED_APPS = (
     'codemirror2',
     'river',
     'river_admin',
-    # 'examples.issue_tracker_example',
-    # 'examples.shipping_example',
-    # 'demo'
 )
 
 MIDDLEWARE = [
@@ -85,7 +79,7 @@ SITE_ID = 1
 
 SECRET_KEY = 'abcde12345'
 
-ROOT_URLCONF = 'local_urls'
+ROOT_URLCONF = 'test_urls'
 
 LOGGING = {
     'version': 1,
