@@ -75,6 +75,8 @@ To run demo locally;
 
 And then go to ``http://127.0.0.1:8000/river-admin/``
 
+**Note:** Create an admin user for yourself if you would like more access.
+
 
 Documentation
 -------------
