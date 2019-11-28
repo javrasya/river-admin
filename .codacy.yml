@@ -6,6 +6,7 @@ exclude_paths:
   - 'river_admin/static/**'
   - 'examples/**/**'
   - 'demo/**/**'
+  - 'pages'/**/**
   - 'test_settings.py'
   - 'manage.py'
   - 'test_urls.py'
