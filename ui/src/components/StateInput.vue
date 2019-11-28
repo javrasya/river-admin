@@ -20,10 +20,18 @@
         </v-list-item-title>
       </v-list-item>
     </template>
-    <template v-slot:selection="{ attr, on, item, selected }">{{ item.label }}</template>
+    <template
+      v-slot:selection="{ attr, on, item, selected }"
+    >{{ item.label }} ( {{ item.description }} )</template>
     <template v-slot:item="{ item }">
       <v-list-item-content>
-        <v-list-item-title v-text="item.final_label"></v-list-item-title>
+        <v-tooltip top v-if="item.description">
+          <template v-slot:activator="{ on }">
+            <v-list-item-title v-on="on" v-text="item.final_label"></v-list-item-title>
+          </template>
+          <span>{{ item.description}}</span>
+        </v-tooltip>
+        <v-list-item-title v-else v-text="item.final_label"></v-list-item-title>
       </v-list-item-content>
     </template>
   </v-autocomplete>
@@ -84,7 +92,7 @@ export default {
           this.items = result
             .filter(state => state.label.includes(searchTerm))
             .map(state => {
-              state.final_label = state.is_new ? state.label + " (Create)" : state.label;
+              state.final_label = state.is_new ? `${state.label} (Create)` : `${state.label}`;
               return state;
             });
         })
@@ -94,7 +102,7 @@ export default {
   methods: {
     _getRemoteStates() {
       return http.get("/state/list/", response => {
-        return response.data.map(remoteState => State.of(remoteState.id, remoteState.label));
+        return response.data.map(remoteState => State.of(remoteState.id, remoteState.label).of_description(remoteState.description));
       });
     }
   }

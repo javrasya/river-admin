@@ -42,7 +42,7 @@ class GroupDto(serializers.ModelSerializer):
 class StateDto(serializers.ModelSerializer):
     class Meta:
         model = State
-        fields = ['id', 'label', "slug"]
+        fields = ['id', 'label', "slug", "description"]
 
 
 class CreateStateDto(serializers.ModelSerializer):

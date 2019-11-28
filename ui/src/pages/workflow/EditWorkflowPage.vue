@@ -97,7 +97,7 @@ export default {
       this.workflow = Workflow.of(result.data.id, result.data.content_type, result.data.initial_state, result.data.field_name);
 
       var state_fetcher = http.get(`/workflow/state/list/${workflow_id}/`, result => {
-        this.states = result.data.map(state => State.of(state.id, state.label));
+        this.states = result.data.map(state => State.of(state.id, state.label).of_description(state.description));
       });
 
       var transition_meta_fetcher = http.get(`/workflow/transition-meta/list/${workflow_id}/`, result => {

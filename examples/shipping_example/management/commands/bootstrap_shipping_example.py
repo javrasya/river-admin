@@ -30,14 +30,14 @@ class Command(BaseCommand):
 
         shipping_content_type = ContentType.objects.get_for_model(Shipping)
 
-        initialized_state, _ = State.objects.get_or_create(label=INITIALIZED)
-        shipped_state, _ = State.objects.get_or_create(label=SHIPPED)
-        arrived_state, _ = State.objects.get_or_create(label=ARRIVED)
-        return_initialized_state, _ = State.objects.get_or_create(label=RETURN_INITIALIZED)
-        returned_state, _ = State.objects.get_or_create(label=RETURNED)
-        re_initialized_state, _ = State.objects.get_or_create(label=RE_INITIALIZED)
-        refunded_state, _ = State.objects.get_or_create(label=REFUNDED)
-        closed_state, _ = State.objects.get_or_create(label=CLOSED)
+        initialized_state, _ = State.objects.update_or_create(label=INITIALIZED, defaults={"description": "First step of the workflow"})
+        shipped_state, _ = State.objects.update_or_create(label=SHIPPED, defaults={"description": "When the goods are physically shipped and it is confirmed by the courier company"})
+        arrived_state, _ = State.objects.update_or_create(label=ARRIVED, defaults={"description": "The goods are arrived on the customer end"})
+        return_initialized_state, _ = State.objects.update_or_create(label=RETURN_INITIALIZED, defaults={"description": "The customer wanted to return the goods and initialized the return at the courier company office"})
+        returned_state, _ = State.objects.update_or_create(label=RETURNED, defaults={"description": "The returned goods have been arrived on the warehouse"})
+        re_initialized_state, _ = State.objects.update_or_create(label=RE_INITIALIZED, defaults={"description": "There was a mistake with the shipment and the it corrected and re-initialized"})
+        refunded_state, _ = State.objects.update_or_create(label=REFUNDED, defaults={"description": "The purchase has been refunded"})
+        closed_state, _ = State.objects.update_or_create(label=CLOSED, defaults={"description": "The final step of the workflow"})
 
         workflow = Shipping.river.shipping_status.workflow \
                    or Workflow.objects.create(content_type=shipping_content_type, field_name="shipping_status", initial_state=initialized_state)

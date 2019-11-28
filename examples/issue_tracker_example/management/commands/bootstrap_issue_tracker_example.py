@@ -26,11 +26,11 @@ class Command(BaseCommand):
 
         issue_content_type = ContentType.objects.get_for_model(Issue)
 
-        open_state, _ = State.objects.get_or_create(label=OPEN)
-        in_progress_state, _ = State.objects.get_or_create(label=IN_PROGRESS)
-        resolved_state, _ = State.objects.get_or_create(label=RESOLVED)
-        re_opened_state, _ = State.objects.get_or_create(label=RE_OPENED)
-        closed_state, _ = State.objects.get_or_create(label=CLOSED)
+        open_state, _ = State.objects.update_or_create(label=OPEN, defaults={"description": "First step of the workflow"})
+        in_progress_state, _ = State.objects.update_or_create(label=IN_PROGRESS, defaults={"description": "The issue has started to be worked on"})
+        resolved_state, _ = State.objects.update_or_create(label=RESOLVED, defaults={"description": "Assignee fixes the issue and waits for confirmation"})
+        re_opened_state, _ = State.objects.update_or_create(label=RE_OPENED, defaults={"description": "The fix was not good enough and needs more work"})
+        closed_state, _ = State.objects.update_or_create(label=CLOSED, defaults={"description": "The final step of the workflow"})
 
         workflow = Issue.river.issue_status.workflow or \
                    Workflow.objects.create(content_type=issue_content_type, field_name="issue_status", initial_state=open_state)

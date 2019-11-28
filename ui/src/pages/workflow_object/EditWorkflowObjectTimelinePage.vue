@@ -235,7 +235,7 @@ export default {
       });
 
       var current_state_fetcher = http.get(`/workflow-object/current-state/${this.workflow.id}/${workflow_object_id}/`, response => {
-        this.current_state = State.of(response.data.id, response.data.label);
+        this.current_state = State.of(response.data.id, response.data.label).of_description(response.data.description);
       });
 
       var current_iteration_fetcher = http.get(`/workflow-object/current-iteration/${this.workflow.id}/${workflow_object_id}/`, response => {
@@ -279,7 +279,9 @@ export default {
     get_states(workflow_id, workflow_object_id) {
       return http.get(`/workflow-object/state/list/${workflow_id}/${workflow_object_id}/`, response => {
         return response.data.map(workflow_object_state =>
-          State.of(this.to_state_id(workflow_object_state.iteration, workflow_object_state.state.id), workflow_object_state.state.label)
+          State.of(this.to_state_id(workflow_object_state.iteration, workflow_object_state.state.id), workflow_object_state.state.label).of_description(
+            workflow_object_state.state.description
+          )
         );
       });
     },

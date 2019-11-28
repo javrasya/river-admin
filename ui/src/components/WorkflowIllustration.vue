@@ -13,9 +13,11 @@
 </template>
 
 <script>
-import { Transition } from "@/models/models";
 import * as d3 from "d3";
+import d3Tip from "d3-tip";
 import dagreD3 from "dagre-d3";
+
+d3.tip = d3Tip;
 
 export default {
   name: "WorkflowIllustration",
@@ -92,7 +94,8 @@ export default {
     _createEdge(transition) {
       this.graph.setEdge(transition.source_state_id, transition.destination_state_id, {
         id: `transition_${transition.id}`,
-        label: "<<---"
+        label: "<<---",
+        curve: d3.curveBasis
       });
     },
 
@@ -125,7 +128,8 @@ export default {
 
         var render = new dagreD3.render();
         var el = d3.select(this.$el);
-        render(el.select("svg g"), this.graph);
+        var inner = el.select("svg g");
+        render(inner, this.graph);
 
         this._reCenterSketch();
         if (this.editable) {
@@ -134,6 +138,7 @@ export default {
         this._setEdgeLabelDefaultClass();
         this._setEdgeOnclicks();
         this._setClasses();
+        this._setup_tooltips(inner);
       }
     },
     _setNodeOnclicks() {
@@ -186,6 +191,35 @@ export default {
           }
         }
       });
+    },
+
+    _setup_tooltips(inner) {
+      var that = this;
+      var tip = d3
+        .tip()
+        .attr("class", "d3-tip")
+        .offset([-10, 0])
+        .html(function(d) {
+          var state = that.states.find(state => state.id == d);
+          if (state) {
+            var label_html = `<div class="label-tooltip"><strong>${state.label}</strong></div>`;
+            var description_html = "";
+
+            if (state.description) {
+              description_html = `<div class="description-tooltip">${state.description}</div>`;
+            } else {
+              description_html = `<div class="no-description-tooltip">No description found</div>`;
+            }
+          }
+          return `<div>${label_html}${description_html}</div>`;
+        });
+
+      this.svg.call(tip);
+
+      inner
+        .selectAll("g.node")
+        .on("mouseover", tip.show)
+        .on("mouseout", tip.hide);
     },
     _getTransitionBy(sourceState, targetState) {
       return this.transitions.find(transition => transition.source_state_id == sourceState.id && transition.destination_state_id == targetState.id);
@@ -307,5 +341,33 @@ text {
   -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.5));
   filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.5));
   /* Similar syntax to box-shadow */
+}
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+
+.label-tooltip {
+  text-align: center;
+  color: lightblue;
+  margin-bottom: 10px;
+}
+
+.description-tooltip {
+  text-align: center;
+  max-width: 400px;
+  font-size: 14px;
+}
+
+.no-description-tooltip {
+  text-align: center;
+  max-width: 400px;
+  font-size: 14px;
+  color: red;
 }
 </style>

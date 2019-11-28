@@ -201,7 +201,7 @@ export default {
   methods: {
     get_states(workflow_id) {
       return http.get(`/workflow/state/list/${workflow_id}/`, response => {
-        return response.data.map(state => State.of(state.id, state.label));
+        return response.data.map(state => State.of(state.id, state.label).of_description(state.description));
       });
     },
 

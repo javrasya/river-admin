@@ -45,6 +45,11 @@ export class State {
         this.is_new = is_new
     }
 
+    of_description(description) {
+        this.description = description;
+        return this;
+    }
+
     static of(id, label) {
         return new State(id, label, false)
     }

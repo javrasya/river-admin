@@ -16,6 +16,10 @@ describe('WorkflowIllustration.vue', () => {
             y: Math.floor(Math.random() * Math.floor(100)),
         });
 
+        window.SVGElement.prototype.createSVGPoint = () => ({
+
+        });
+
     })
 
     afterEach(() => {

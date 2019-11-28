@@ -13,12 +13,13 @@ class StateViewTest(TestCase):
         assert_that(response.status_code, equal_to(HTTP_404_NOT_FOUND))
 
     def test__shouldReturnState(self):
-        state = State.objects.create(label="state-1")
+        state = State.objects.create(label="state-1", description="test-description")
         response = self.client.get('/state/get/%d/' % state.id)
         assert_that(response.status_code, equal_to(HTTP_200_OK))
         assert_that(response.data, has_entry("id", equal_to(state.id)))
         assert_that(response.data, has_entry("label", equal_to(state.label)))
         assert_that(response.data, has_entry("slug", equal_to(state.slug)))
+        assert_that(response.data, has_entry("description", equal_to(state.description)))
 
     def test__shouldReturnEmptyListWhenThereIsNoStates(self):
         response = self.client.get('/state/list/')
