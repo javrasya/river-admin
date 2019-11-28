@@ -32,9 +32,12 @@ class Command(BaseCommand):
         re_opened_state, _ = State.objects.update_or_create(label=RE_OPENED, defaults={"description": "The fix was not good enough and needs more work"})
         closed_state, _ = State.objects.update_or_create(label=CLOSED, defaults={"description": "The final step of the workflow"})
 
-        workflow = Issue.river.issue_status.workflow or \
-                   Workflow.objects.create(content_type=issue_content_type, field_name="issue_status", initial_state=open_state)
-
+        workflow = Issue.river.issue_status.workflow \
+                   or Workflow.objects.create(content_type=issue_content_type, field_name="issue_status", initial_state=open_state)
+        workflow.transition_approvals.all().delete()
+        workflow.transitions.all().delete()
+        workflow.transition_approval_metas.all().delete()
+        workflow.transition_metas.all().delete()
         open_state_to_in_progress, _ = TransitionMeta.objects.get_or_create(workflow=workflow, source_state=open_state, destination_state=in_progress_state)
         in_progress_to_resolved, _ = TransitionMeta.objects.get_or_create(workflow=workflow, source_state=in_progress_state, destination_state=resolved_state)
         resolved_to_closed, _ = TransitionMeta.objects.get_or_create(workflow=workflow, source_state=resolved_state, destination_state=closed_state)

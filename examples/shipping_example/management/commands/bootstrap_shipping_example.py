@@ -42,6 +42,11 @@ class Command(BaseCommand):
         workflow = Shipping.river.shipping_status.workflow \
                    or Workflow.objects.create(content_type=shipping_content_type, field_name="shipping_status", initial_state=initialized_state)
 
+        workflow.transition_approvals.all().delete()
+        workflow.transitions.all().delete()
+        workflow.transition_approval_metas.all().delete()
+        workflow.transition_metas.all().delete()
+
         initialized_to_shipped, _ = TransitionMeta.objects.get_or_create(workflow=workflow, source_state=initialized_state, destination_state=shipped_state)
         shipped_to_arrived, _ = TransitionMeta.objects.get_or_create(workflow=workflow, source_state=shipped_state, destination_state=arrived_state)
         arrived_to_closed, _ = TransitionMeta.objects.get_or_create(workflow=workflow, source_state=arrived_state, destination_state=closed_state)
