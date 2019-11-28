@@ -42,7 +42,7 @@ it uses on both backend and frontend sides which are ``django-river``,
 
 `River Admin Website`_
 
-.. _`River Admin Website`: https://javrasya.github.io/river-admin-pages/
+.. _`River Admin Website`: https://riveradminproject.com/
 
 .. rst-class:: center-without-bg
 

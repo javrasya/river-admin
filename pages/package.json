@@ -5,6 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "postbuild": "echo 'riveradminproject.com' > dist/CNAME",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
