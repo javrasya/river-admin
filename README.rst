@@ -35,6 +35,9 @@ interfaces for django-river_ . The power of it comes from the libraries
 it uses on both backend and frontend sides which are ``django-river``,
 ``django-rest-framework`` ``Vue`` and ``Vuetify``.
 
+`River Admin Website`_
+
+.. _`River Admin Website`: https://javrasya.github.io/river-admin-pages/
 .. _`Browser Support`: https://vuetifyjs.com/en/getting-started/browser-support#browser-support
 .. _`Vuetify`: https://vuetifyjs.com/en/
 .. _`django-river`: https://github.com/javrasya/django-river
