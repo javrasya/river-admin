@@ -66,7 +66,7 @@ please consider becoming our `sponsor`_  , `patron`_ or donate over `PayPal`_
 Live Demo
 =========
 
-https://river-admin-demo.herokuapp.com/river-admin/
+http://demo.riveradminproject.com/river-admin/
 
 - User: demo
 - Password: demo
