@@ -15,6 +15,9 @@
 .. |Code Quality| image:: https://api.codacy.com/project/badge/Grade/3e7f03e8df5a488f90fb0ed93295c41b
     :target: https://www.codacy.com/manual/javrasya/river-admin?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=javrasya/river-admin&amp;utm_campaign=Badge_Grade
 
+.. |Downloads| image:: https://img.shields.io/pypi/dm/river-admin
+    :alt: PyPI - Downloads
+
 .. |Logo| image:: docs/logo.svg
     :width: 200
 
@@ -27,7 +30,7 @@
 River Admin
 ===========
 
-|Build Status| |Doc Status| |Licence| |Coverage Status| |Code Quality|
+|Build Status| |Doc Status| |Licence| |Coverage Status| |Code Quality| |Downloads|
 
 \:rocket\: \:rocket\: \:rocket\: ``River Admin`` is a very modern and
 a shiny customizable admin extension with user friendly and easy to use
