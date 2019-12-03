@@ -19,7 +19,7 @@
     :alt: PyPI - Downloads
     
 .. |Discord| image:: https://img.shields.io/discord/651433240019599400
-    :target: https://discord.gg/4y5UnNZ
+    :target: https://discord.gg/22tm7wF
     :alt: Discord
 
 .. |Logo| image:: docs/logo.svg
