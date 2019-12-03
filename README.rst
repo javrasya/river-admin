@@ -17,6 +17,10 @@
 
 .. |Downloads| image:: https://img.shields.io/pypi/dm/river-admin
     :alt: PyPI - Downloads
+    
+.. |Discord| image:: https://img.shields.io/discord/651433240019599400
+    :target: https://discord.gg/4y5UnNZ
+    :alt: Discord
 
 .. |Logo| image:: docs/logo.svg
     :width: 200
@@ -30,7 +34,7 @@
 River Admin
 ===========
 
-|Build Status| |Doc Status| |Licence| |Coverage Status| |Code Quality| |Downloads|
+|Build Status| |Doc Status| |Licence| |Coverage Status| |Code Quality| |Downloads| |Discord|
 
 \:rocket\: \:rocket\: \:rocket\: ``River Admin`` is a very modern and
 a shiny customizable admin extension with user friendly and easy to use
