@@ -84,6 +84,14 @@ matrix:
     - language: python
       python: "3.6"
       cache: pip
+      env: TOXENV=py36-dj3.0
+      install:
+        - pip install tox-travis
+      script:
+        - tox        
+    - language: python
+      python: "3.6"
+      cache: pip
       env: TOXENV=cov
       install:
         - pip install tox-travis
