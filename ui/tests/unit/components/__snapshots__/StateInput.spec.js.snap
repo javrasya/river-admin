@@ -3,10 +3,10 @@
 exports[`StateInput.vue should filter out those that doesnt match the search 1`] = `
 <v-autocomplete-stub
   allowoverflow="true"
-  appendicon="$vuetify.icons.dropdown"
+  appendicon="$dropdown"
   backgroundcolor=""
   clearable="true"
-  clearicon="$vuetify.icons.clear"
+  clearicon="$clear"
   errorcount="1"
   errormessages=""
   filter="function _default(item, queryText, itemText) {
@@ -61,10 +61,10 @@ exports[`StateInput.vue should not fetch states unless the typing starts 1`] = `
 exports[`StateInput.vue should not show creating state option when user is not authorized 1`] = `
 <v-autocomplete-stub
   allowoverflow="true"
-  appendicon="$vuetify.icons.dropdown"
+  appendicon="$dropdown"
   backgroundcolor=""
   clearable="true"
-  clearicon="$vuetify.icons.clear"
+  clearicon="$clear"
   errorcount="1"
   errormessages=""
   filter="function _default(item, queryText, itemText) {
@@ -117,10 +117,10 @@ exports[`StateInput.vue should not show creating state option when user is not a
 exports[`StateInput.vue should show creating state option when user is authorized 1`] = `
 <v-autocomplete-stub
   allowoverflow="true"
-  appendicon="$vuetify.icons.dropdown"
+  appendicon="$dropdown"
   backgroundcolor=""
   clearable="true"
-  clearicon="$vuetify.icons.clear"
+  clearicon="$clear"
   errorcount="1"
   errormessages=""
   filter="function _default(item, queryText, itemText) {
