@@ -25,11 +25,11 @@ development environment to be set up.
 
        pip install tox
 
-3. Install Twine_ to upload packages to ``PyPI``
+3. Install Twine_ and other necessary packages to upload packages to ``PyPI``
 
    .. code:: bash
 
-       pip install twine
+       pip install wheel setuptools twine
 
 4. You are ready to develop the backend side now.
 
