@@ -13,7 +13,7 @@ except IOError as err:
 
 setup(
     name='river-admin',
-    version='0.5.2',
+    version='0.6.0',
     author='Ahmet DAL',
     author_email='ceahmetdal@gmail.com',
     packages=find_packages(),
