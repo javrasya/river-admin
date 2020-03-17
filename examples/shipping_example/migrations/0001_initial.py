@@ -10,7 +10,7 @@ class Migration(migrations.Migration):
     initial = True
 
     dependencies = [
-        ('river', '0012_auto_20191113_1550'),
+        ('river', '0001_initial'),
     ]
 
     operations = [

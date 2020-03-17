@@ -129,16 +129,7 @@ exports[`ApprovalList.vue should render approvals when the list is with more tha
                 class="v-dialog__container"
                 role="dialog"
               >
-                <div
-                  class="v-dialog__content"
-                  role="document"
-                  style="z-index: 0;"
-                >
-                  <div
-                    class="v-dialog"
-                    style="max-width: 800px; display: none;"
-                  />
-                </div>
+                <!---->
               </div>
             </div>
           </div>
@@ -227,16 +218,7 @@ exports[`ApprovalList.vue should render approvals when the list is with more tha
                 class="v-dialog__container"
                 role="dialog"
               >
-                <div
-                  class="v-dialog__content"
-                  role="document"
-                  style="z-index: 0;"
-                >
-                  <div
-                    class="v-dialog"
-                    style="max-width: 800px; display: none;"
-                  />
-                </div>
+                <!---->
               </div>
             </div>
           </div>
@@ -325,16 +307,7 @@ exports[`ApprovalList.vue should render approvals when the list is with more tha
                 class="v-dialog__container"
                 role="dialog"
               >
-                <div
-                  class="v-dialog__content"
-                  role="document"
-                  style="z-index: 0;"
-                >
-                  <div
-                    class="v-dialog"
-                    style="max-width: 800px; display: none;"
-                  />
-                </div>
+                <!---->
               </div>
             </div>
           </div>
@@ -442,16 +415,7 @@ exports[`ApprovalList.vue should render approvals when the list is with one item
                 class="v-dialog__container"
                 role="dialog"
               >
-                <div
-                  class="v-dialog__content"
-                  role="document"
-                  style="z-index: 0;"
-                >
-                  <div
-                    class="v-dialog"
-                    style="max-width: 800px; display: none;"
-                  />
-                </div>
+                <!---->
               </div>
             </div>
           </div>
@@ -537,16 +501,7 @@ exports[`ApprovalList.vue should update interanal items when approvals are updat
                 class="v-dialog__container"
                 role="dialog"
               >
-                <div
-                  class="v-dialog__content"
-                  role="document"
-                  style="z-index: 0;"
-                >
-                  <div
-                    class="v-dialog"
-                    style="max-width: 800px; display: none;"
-                  />
-                </div>
+                <!---->
               </div>
             </div>
           </div>
@@ -613,16 +568,7 @@ exports[`ApprovalList.vue should update interanal items when approvals are updat
                 class="v-dialog__container"
                 role="dialog"
               >
-                <div
-                  class="v-dialog__content"
-                  role="document"
-                  style="z-index: 0;"
-                >
-                  <div
-                    class="v-dialog"
-                    style="max-width: 800px; display: none;"
-                  />
-                </div>
+                <!---->
               </div>
             </div>
           </div>
@@ -689,16 +635,7 @@ exports[`ApprovalList.vue should update interanal items when approvals are updat
                 class="v-dialog__container"
                 role="dialog"
               >
-                <div
-                  class="v-dialog__content"
-                  role="document"
-                  style="z-index: 0;"
-                >
-                  <div
-                    class="v-dialog"
-                    style="max-width: 800px; display: none;"
-                  />
-                </div>
+                <!---->
               </div>
             </div>
           </div>

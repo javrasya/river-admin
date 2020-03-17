@@ -10,7 +10,7 @@ Getting Started
 Requirements
 ------------
 
-* `django-river`_ >= 3.0.0
+* `django-river`_ >= 3.2.0
 * Any ``Python`` version that is supported by `django-river`_
 * Any ``Django`` version that is supported by `django-river`_
 * Any browser that is supported by `Vuetify`_ (`Browser Support`_)

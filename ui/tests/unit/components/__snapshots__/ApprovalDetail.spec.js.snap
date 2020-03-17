@@ -57,16 +57,7 @@ exports[`ApprovalDetail.vue should emit event on deleting the approval 1`] = `
     class="v-dialog__container"
     role="dialog"
   >
-    <div
-      class="v-dialog__content"
-      role="document"
-      style="z-index: 0;"
-    >
-      <div
-        class="v-dialog"
-        style="max-width: 800px; display: none;"
-      />
-    </div>
+    <!---->
   </div>
 </div>
 `;
@@ -128,16 +119,7 @@ exports[`ApprovalDetail.vue should emit event on deleting the approval 2`] = `
     class="v-dialog__container"
     role="dialog"
   >
-    <div
-      class="v-dialog__content"
-      role="document"
-      style="z-index: 0;"
-    >
-      <div
-        class="v-dialog"
-        style="max-width: 800px; display: none;"
-      />
-    </div>
+    <!---->
   </div>
 </div>
 `;
@@ -199,16 +181,7 @@ exports[`ApprovalDetail.vue should not render dragging icon when it is not edita
     class="v-dialog__container"
     role="dialog"
   >
-    <div
-      class="v-dialog__content"
-      role="document"
-      style="z-index: 0;"
-    >
-      <div
-        class="v-dialog"
-        style="max-width: 800px; display: none;"
-      />
-    </div>
+    <!---->
   </div>
 </div>
 `;
@@ -292,16 +265,7 @@ exports[`ApprovalDetail.vue should not render groups lane when the group list is
     class="v-dialog__container"
     role="dialog"
   >
-    <div
-      class="v-dialog__content"
-      role="document"
-      style="z-index: 0;"
-    >
-      <div
-        class="v-dialog"
-        style="max-width: 800px; display: none;"
-      />
-    </div>
+    <!---->
   </div>
 </div>
 `;
@@ -385,16 +349,7 @@ exports[`ApprovalDetail.vue should not render permissions lane when the permissi
     class="v-dialog__container"
     role="dialog"
   >
-    <div
-      class="v-dialog__content"
-      role="document"
-      style="z-index: 0;"
-    >
-      <div
-        class="v-dialog"
-        style="max-width: 800px; display: none;"
-      />
-    </div>
+    <!---->
   </div>
 </div>
 `;
@@ -456,16 +411,7 @@ exports[`ApprovalDetail.vue should not render settings button if not editable 1`
     class="v-dialog__container"
     role="dialog"
   >
-    <div
-      class="v-dialog__content"
-      role="document"
-      style="z-index: 0;"
-    >
-      <div
-        class="v-dialog"
-        style="max-width: 800px; display: none;"
-      />
-    </div>
+    <!---->
   </div>
 </div>
 `;
@@ -527,16 +473,7 @@ exports[`ApprovalDetail.vue should not render the buttons in the settings as def
     class="v-dialog__container"
     role="dialog"
   >
-    <div
-      class="v-dialog__content"
-      role="document"
-      style="z-index: 0;"
-    >
-      <div
-        class="v-dialog"
-        style="max-width: 800px; display: none;"
-      />
-    </div>
+    <!---->
   </div>
 </div>
 `;
@@ -620,16 +557,7 @@ exports[`ApprovalDetail.vue should render approval icon correctly 1`] = `
     class="v-dialog__container"
     role="dialog"
   >
-    <div
-      class="v-dialog__content"
-      role="document"
-      style="z-index: 0;"
-    >
-      <div
-        class="v-dialog"
-        style="max-width: 800px; display: none;"
-      />
-    </div>
+    <!---->
   </div>
 </div>
 `;
@@ -713,16 +641,7 @@ exports[`ApprovalDetail.vue should render dragging icon when it is editable 1`] 
     class="v-dialog__container"
     role="dialog"
   >
-    <div
-      class="v-dialog__content"
-      role="document"
-      style="z-index: 0;"
-    >
-      <div
-        class="v-dialog"
-        style="max-width: 800px; display: none;"
-      />
-    </div>
+    <!---->
   </div>
 </div>
 `;
@@ -863,16 +782,7 @@ exports[`ApprovalDetail.vue should render groups lane when the group list is not
     class="v-dialog__container"
     role="dialog"
   >
-    <div
-      class="v-dialog__content"
-      role="document"
-      style="z-index: 0;"
-    >
-      <div
-        class="v-dialog"
-        style="max-width: 800px; display: none;"
-      />
-    </div>
+    <!---->
   </div>
 </div>
 `;
@@ -1013,16 +923,7 @@ exports[`ApprovalDetail.vue should render permissions lane when the permission l
     class="v-dialog__container"
     role="dialog"
   >
-    <div
-      class="v-dialog__content"
-      role="document"
-      style="z-index: 0;"
-    >
-      <div
-        class="v-dialog"
-        style="max-width: 800px; display: none;"
-      />
-    </div>
+    <!---->
   </div>
 </div>
 `;
@@ -1106,16 +1007,7 @@ exports[`ApprovalDetail.vue should render settings button if editable 1`] = `
     class="v-dialog__container"
     role="dialog"
   >
-    <div
-      class="v-dialog__content"
-      role="document"
-      style="z-index: 0;"
-    >
-      <div
-        class="v-dialog"
-        style="max-width: 800px; display: none;"
-      />
-    </div>
+    <!---->
   </div>
 </div>
 `;
@@ -1199,16 +1091,7 @@ exports[`ApprovalDetail.vue should render title correctly 1`] = `
     class="v-dialog__container"
     role="dialog"
   >
-    <div
-      class="v-dialog__content"
-      role="document"
-      style="z-index: 0;"
-    >
-      <div
-        class="v-dialog"
-        style="max-width: 800px; display: none;"
-      />
-    </div>
+    <!---->
   </div>
 </div>
 `;
