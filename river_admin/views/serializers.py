@@ -1,8 +1,12 @@
-from django.contrib.auth.models import Permission, Group, User
+from django.contrib.auth.models import Permission, Group
 from django.contrib.contenttypes.models import ContentType
 from rest_framework import serializers
 from river.models import Function, OnApprovedHook, State, TransitionApprovalMeta, \
     OnTransitHook, TransitionMeta, Transition, Workflow, TransitionApproval, DONE, CANCELLED
+
+# Custom Usermodel support patch
+from django.contrib.auth import get_user_model
+User = get_user_model()
 
 from river.models.hook import AFTER, BEFORE
 
