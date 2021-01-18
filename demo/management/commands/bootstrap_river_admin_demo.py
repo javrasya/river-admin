@@ -1,6 +1,11 @@
 import random
 
-from django.contrib.auth.models import Group, User, Permission
+from django.contrib.auth.models import Group, Permission
+
+#custom user support patch
+from django.contrib.auth import get_user_model
+User = get_user_model()
+
 from django.contrib.contenttypes.models import ContentType
 from django.core.management.base import BaseCommand
 from django.db import transaction
