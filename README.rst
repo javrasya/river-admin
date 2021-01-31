@@ -1,5 +1,5 @@
-.. |Build Status| image:: https://travis-ci.org/javrasya/river-admin.svg?branch=master
-    :target: https://travis-ci.org/javrasya/river-admin
+.. |Build Status| image:: https://travis-ci.com/javrasya/river-admin.svg?branch=master
+    :target: https://travis-ci.com/javrasya/river-admin
 
 .. |Doc Status| image:: https://readthedocs.org/projects/river-admin/badge/?version=latest
     :target: https://river-admin.readthedocs.io/en/latest/?badge=latest
