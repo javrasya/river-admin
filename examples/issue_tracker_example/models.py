@@ -1,4 +1,9 @@
-from django.contrib.auth.models import User
+
+#Custom user model support replacement
+# from django.contrib.auth.models import User
+from django.contrib.auth import get_user_model
+User = get_user_model()
+
 from django.db import models
 from django.db.models import SET_NULL
 from river.models.fields.state import StateField
